@@ -1,46 +1,123 @@
 @extends('master')
 @section('contents')
+<style>
+/* Video background styling */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content box styling */
+.content-box {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 650px;
+    margin: 0;
+    text-align: left; /* Align text to the left */
+    color: #fff;
+}
+
+/* Align content box to the left */
+.content-box {
+    left: -4%; /* Adjust percentage as needed for spacing */
+    margin-top: 18%;
+    transform: translateY(-50%);
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired effect */
+    z-index: 1;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Text content styling */
+.text-content {
+    position: relative;
+    z-index: 2;
+}
 
 
 
-        <!-- banner-section -->
-        <section class="banner-section p_relative pt_20">
-            <div class="large-container">
-                <div class="banner-carousel owl-theme owl-carousel owl-nav-none">
-                    <div class="slide-item p_relative">
-                        <div class="bg-layer" style="background-image: url(assets/images/banner/banner-1.jpg);"></div>
-                        <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
-                            <div class="btn-box">
-                                <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item p_relative">
-                        <div class="bg-layer" style="background-image: url(assets/images/banner/banner-2.jpg);"></div>
-                        <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
-                            <div class="btn-box">
-                                <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item p_relative">
-                        <div class="bg-layer" style="background-image: url(assets/images/banner/banner-3.jpg);"></div>
-                        <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
-                            <div class="btn-box">
-                                <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
-                            </div>
+</style>
+
+
+<!-- banner-section -->
+<section class="banner-section p_relative pt_20">
+    <div class="large-container">
+        <div class="banner-carousel owl-theme owl-carousel owl-nav-none">
+            <div class="slide-item p_relative">
+                <div class="bg-layer">
+                    <video autoplay loop muted playsinline class="video-bg">
+                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="content-box p_relative">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
+                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                        <div class="btn-box">
+                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- banner-section end -->
+            <div class="slide-item p_relative">
+                <div class="bg-layer">
+                    <video autoplay loop muted playsinline class="video-bg">
+                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="content-box p_relative">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
+                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                        <div class="btn-box">
+                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item p_relative">
+                <div class="bg-layer">
+                    <video autoplay loop muted playsinline class="video-bg">
+                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="content-box p_relative">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
+                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                        <div class="btn-box">
+                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner-section end -->
+
+
+
 
 
         <!-- clients-section -->

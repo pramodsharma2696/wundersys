@@ -99,7 +99,8 @@
   background: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
-  padding: 7px 60px;
+  padding: 0px 0px;
+  /* padding: 7px 60px; */
 }
 
 .header-bottom .bottom-inner .stock-list{

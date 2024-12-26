@@ -61,23 +61,14 @@
                     <div class="animation-preloader">
                         <div class="spinner"></div>
                         <div class="txt-loading">
-                            <span data-text-preloader="f" class="letters-loading">
-                                f
+                            <span data-text-preloader="w" class="letters-loading">
+                                w
                             </span>
                             <span data-text-preloader="o" class="letters-loading">
-                                o
+                                u
                             </span>
-                            <span data-text-preloader="r" class="letters-loading">
-                                r
-                            </span>
-                            <span data-text-preloader="t" class="letters-loading">
-                                t
-                            </span>
-                            <span data-text-preloader="r" class="letters-loading">
-                                r
-                            </span>
-                            <span data-text-preloader="a" class="letters-loading">
-                                a
+                            <span data-text-preloader="n" class="letters-loading">
+                                n
                             </span>
                             <span data-text-preloader="d" class="letters-loading">
                                 d
@@ -85,8 +76,41 @@
                             <span data-text-preloader="e" class="letters-loading">
                                 e
                             </span>
-                            <span data-text-preloader="x" class="letters-loading">
-                                x
+                            <span data-text-preloader="r" class="letters-loading">
+                                r
+                            </span>
+                            <span data-text-preloader="s" class="letters-loading">
+                                s
+                            </span>
+                            <span data-text-preloader="y" class="letters-loading">
+                                y
+                            </span>
+                            <span data-text-preloader="s" class="letters-loading">
+                                s
+                            </span>
+                            <span data-text-preloader=" " class="letters-loading">
+                                
+                            </span>
+                            <span data-text-preloader="c" class="letters-loading">
+                                c
+                            </span>
+                            <span data-text-preloader="a" class="letters-loading">
+                                a
+                            </span>
+                            <span data-text-preloader="p" class="letters-loading">
+                                p
+                            </span>
+                            <span data-text-preloader="i" class="letters-loading">
+                                i
+                            </span>
+                            <span data-text-preloader="t" class="letters-loading">
+                                t
+                            </span>
+                            <span data-text-preloader="a" class="letters-loading">
+                                a
+                            </span>
+                            <span data-text-preloader="l" class="letters-loading">
+                                l
                             </span>
                         </div>
                     </div>  
@@ -96,12 +120,12 @@
         <!-- preloader end -->
 
 
-        <!-- page-direction -->
+        <!-- page-direction 
         <div class="page_direction">
             <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
             <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
         </div>
-        <!-- page-direction end -->
+         page-direction end -->
 
 
         <!--Search Popup-->
