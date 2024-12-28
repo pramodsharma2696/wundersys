@@ -54,7 +54,7 @@
 
 
         <!-- preloader -->
-        <div class="loader-wrap">
+        <div class="loader-wrap" style="display: none;">
             <div class="preloader">
                 <div class="preloader-close"><i class="fal fa-times"></i></div>
                 <div id="handle-preloader" class="handle-preloader">

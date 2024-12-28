@@ -1,6 +1,7 @@
 @extends('master')
 @section('contents')
 <style>
+
 /* Video background styling */
 .video-bg {
     position: absolute;
@@ -2034,7 +2035,7 @@
 
 
         <!-- award-section -->
-        <section class="award-section pt_100 pb_100">
+        <section class="award-section pt_100 pb_100" style="display: none;">
             <div class="auto-container">
                 <div class="sec-title centred pb_60">
                     <span class="sub-title mb_14">AWARDED BY THE BEST</span>

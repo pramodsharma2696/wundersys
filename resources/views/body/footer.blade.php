@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="footer-lower">
-                                <figure class="footer-logo"><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/logo.png" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo2.png" style="width: 130px;" alt=""></a></figure>
                                 <ul class="footer-card clearfix">
                                     <li><h4>We Accept:</h4></li>
                                     <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-1.png" alt=""></a></li>
