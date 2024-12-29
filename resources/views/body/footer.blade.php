@@ -93,7 +93,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget centred ml_80">
                                 <div class="widget-content">
-                                    <figure class="footer-logo mb_15"><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/logo-3.png" alt=""></a></figure>
+                                    <figure class="footer-logo mb_15"><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/img/logo/logo2.png" style="width: 130px;" alt=""></a></figure>
                                     <p>Trade multipliers on our app.</p>
                                     <div class="scanner-box mb_30"><img src="{{ asset('') }}assets/images/icons/icon-3.png" alt=""></div>
                                     <ul class="download-list clearfix">
