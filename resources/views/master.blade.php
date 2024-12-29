@@ -10,7 +10,7 @@
 <title>Wundersys Capital</title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="{{ asset('') }}assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ asset('') }}assets/img/logo/logo4.png" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
