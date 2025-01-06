@@ -5,7 +5,7 @@
             <div class="top-inner">
                 <div class="support-box">
                     <div class="icon-box"><i class="icon-07"></i></div>
-                    <a href="{{ asset('') }}tel:912345678">91 2345 678</a>
+                    <a href="{{ asset('') }}tel:912345678">912345 678</a>
                 </div>
                 <div class="option-block">
                     <!-- <div class="language-picker js-language-picker mr_40" data-trigger-class="btn btn--subtle">
@@ -19,8 +19,9 @@
                             </select>
                         </form>
                     </div> -->
-                    <a href="#" class="theme-btn btn-one mr_10">Open Account</a>
-                    <a href="#" class="theme-btn btn-two">Login</a>
+                    <a href="#" class="theme-btn btn-one mr_10">Open Demo Account</a>
+                    <a href="#" class="theme-btn btn-one mr_10">Open Live Account</a>
+                    <a href="#" class="theme-btn btn-two">Log In</a>
                 </div>
             </div>
         </div>
@@ -29,7 +30,7 @@
     <div class="header-lower">
         <div class="large-container">
             <div class="outer-box">
-                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo5.jpg" alt="" class="img-size"></a></figure>
+                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo1.jpg" alt="" class="img-size" style="width:140px"></a></figure>
                 <div class="menu-area">
                     <!--Mobile Navigation Toggler-->
                     <div class="mobile-nav-toggler">
@@ -41,46 +42,57 @@
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li class="current dropdown"><a href="{{ asset('') }}index.html">Home</a>                                </li>
-                                <li class="dropdown"><a href="{{ asset('') }}index.html">Trading</a>
+                                <li class="dropdown"><a href="#">Trading</a>
                                     <ul>
-                                        <li><a href="{{ asset('') }}platform.html">Platform</a></li>
-                                        <li><a href="{{ asset('') }}account.html">Account</a></li>
-                                        <li><a href="{{ asset('') }}account-details.html">Account Deatils</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="{{ asset('') }}index.html">Market</a>
-                                    <ul>
-                                        <li><a href="{{ asset('') }}markets.html">Markets Place</a></li>
-                                        <li><a href="{{ asset('') }}markets-details.html">Markets Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="{{ asset('') }}index.html">About Us</a>
-                                    <ul>
-                                        <li class="dropdown"><a href="{{ asset('') }}index.html">Education</a>
+                                        <li class="dropdown"><a href="{{ url('forex') }}">Instruments</a>
                                             <ul>
-                                                <li><a href="{{ asset('') }}education.html">Education</a></li>
-                                                <li><a href="{{ asset('') }}education-details.html">Book Details</a></li>
+                                                <li><a href="{{ url('forex') }}">Forex</a></li>
+                                                <li><a href="{{ url('equities') }}">Equities</a></li>
+                                                <li><a href="{{ url('indices') }}">Indices</a></li>
+                                                <li><a href="{{ url('commodities') }}">Commodities</a></li>
+                                                <li><a href="{{ url('cryptocurrencies') }}">Cryptocurrencies</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ asset('') }}index.html">Team</a>
+                                        <li class="dropdown"><a href="{{ url('account') }}">Account Types</a>
                                             <ul>
-                                                <li><a href="{{ asset('') }}team.html">Our Expert Team</a></li>
-                                                <li><a href="{{ asset('') }}team-details.html">Team Deatils</a></li>
+                                                <li><a href="{{ url('account#std_account') }}">Standard Account</a></li>
+                                                <li><a href="{{ url('account#prime_account') }}">Prime Account</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ asset('') }}about.html">About Us</a></li>
-                                        <li><a href="{{ asset('') }}faq.html">FAQ's</a></li>
-                                        <li><a href="{{ asset('') }}error.html">404</a></li>
+                                        <li class="dropdown"><a href="{{ url('account') }}">Platform</a>
+                                            <ul>
+                                                <li><a href="{{ url('metatrader5') }}"> MetaTrader 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="{{ url('tools') }}">Tools</a>
+                                            <ul>
+                                                <li><a href="{{ url('tools#Autochartist') }}">Autochartist </a></li>
+                                                <li><a href="{{ url('tools#vps') }}">VPS</a></li>
+                                                <li><a href="{{ url('tools#mql5') }}">MQL 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="{{ url('conditions') }}">Conditions</a>
+                                            <ul>
+                                                <li><a href="{{ url('conditions#leverage') }}">Leverage </a></li>
+                                                <li><a href="{{ url('conditions#swaps') }}">Swaps</a></li>
+                                                <li><a href="{{ url('conditions#rollovers') }}">Rollovers</a></li>
+                                                <li><a href="{{ url('conditions#dividends') }}">Dividends</a></li>
+                                                <li><a href="{{ url('conditions#market') }}">Market Notifications</a></li>
+                                                <li><a href="{{ url('conditions#product') }}">Product Information</a></li>
+                                            </ul>
+                                        </li>
+                                        
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="{{ asset('') }}index.html">Blog</a>
+                                <li class="dropdown"><a href="{{ url('about-us') }}">Company</a>
                                     <ul>
-                                        <li><a href="{{ asset('') }}blog.html">Blog Grid</a></li>
-                                        <li><a href="{{ asset('') }}blog-2.html">Blog Standard</a></li>
-                                        <li><a href="{{ asset('') }}blog-details.html">Blog Details</a></li>
+                                        <li><a href="{{ url('about-us') }}#about_company">About Company</a></li>
+                                        <li><a href="{{ url('about-us') }}#our_brand">Our Brand Values</a></li>
+                                        <li><a href="{{ url('about-us') }}#3step">3 Step Process</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ asset('') }}contact.html">Contact</a></li>
+                                <li><a href="{{ url('contact-us') }}">Contact</a></li>
+						        <li><a href="{{ url('FAQ') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </nav>

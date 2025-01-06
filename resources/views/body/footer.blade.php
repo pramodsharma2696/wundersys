@@ -1,109 +1,70 @@
+<style>
+    .whatsapp_chat1 {
+    position: fixed;
+    right: 15px;
+    bottom: 30%;
+    background: green;
+    border-radius: 50%;
+    padding: 10px 13px;
+    z-index: 99999;
+    box-shadow: 0 2px 5px #717171;
+    transition: all 0.4s ease-in-out;
+}
+</style>
 <footer class="main-footer">
             <div class="widget-section p_relative pt_70 pb_80">
                 <div class="auto-container">
                     <div class="row clearfix">
-                        <div class="col-lg-8 col-md-12 col-sm-12 big-column">
+                    <div class="col-lg-5 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-content">
+                                    <figure class="footer-logo mb_15"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo3.png" style="width: 185px;" alt=""></a></figure>
+                                    <p>We provide the fastest trading using modern technologies. No delays in order executions and most accurate quotes. Our trading platform is available around the clock and on weekends. Wundersys Capital limited customer service is available 24/5. We are continuously adding new financial instruments.</p>
+                                </div>      
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-sm-12 big-column">
                             <div class="row clearfix">
-                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                                     <div class="footer-widget links-widget">
                                         <div class="widget-title mb_11">
                                             <h3>About Us</h3>
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
-                                                <li><a href="{{ asset('') }}index.html">Who we are</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Awards</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Principals</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Partnership</a></li>
-                                                <li><a href="{{ asset('') }}contact.html">Contact us</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Careers</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Management</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                                    <div class="footer-widget links-widget">
-                                        <div class="widget-title mb_11">
-                                            <h3>Platforms</h3>
-                                        </div>
-                                        <div class="widget-content">
-                                            <ul class="links-list clearfix">
+                                               
+                                                <li><a href="{{ asset('') }}index.html">Contact us</a></li>
                                                 <li><a href="{{ asset('') }}index.html">Forex</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Crypto CFDs</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Share CFDs</a></li>
+                                                <li><a href="{{ asset('') }}index.html">Equities</a></li>
+                                                <li><a href="{{ asset('') }}index.html">Indices</a></li>
                                                 <li><a href="{{ asset('') }}index.html">Commodities</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Spot Metals</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Energies</a></li>
-                                                <li><a href="{{ asset('') }}index.html">MetaTrader 5</a></li>
+                                                <li><a href="{{ asset('') }}contact.html">Cryptocurrencies</a></li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="col-lg-8 col-md-6 col-sm-12 footer-column">
                                     <div class="footer-widget links-widget">
                                         <div class="widget-title mb_11">
-                                            <h3>Trading Tools</h3>
+                                            <h3>Contact Us</h3>
                                         </div>
                                         <div class="widget-content">
-                                            <ul class="links-list clearfix">
-                                                <li><a href="{{ asset('') }}index.html">FXT Navigator</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Trading Central</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Economic Calendar</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Market Sentiment</a></li>
-                                                <li><a href="{{ asset('') }}index.html">API Trading</a></li>
-                                                <li><a href="{{ asset('') }}index.html">VPS</a></li>
-                                                <li><a href="{{ asset('') }}index.html">CDF Rollover</a></li>
-                                            </ul>
+                                            <p><b>Registered address:</b> Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia</p>
+                                            <p><b>Physical address:</b> B32, B-Block, Green Park Avenue, Fairlands, Salem-636016, Tamil Nadu, India</p>
+                                            <p><b>Registration number</b>: 2023-00625</p>
+                                            <p><b>Email :</b> support@wundersyscapital.com</p>
+                                            <p><b>Phone :</b> +91 427 355 6256</p>
+                                            <p>This Website is owned/operated by Wundersys Capital Limited</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                                    <div class="footer-widget links-widget">
-                                        <div class="widget-title mb_25">
-                                            <h3>Support</h3>
-                                        </div>
-                                        <div class="widget-content">
-                                            <ul class="links-list clearfix">
-                                                <li><a href="{{ asset('') }}index.html">Legal Information</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Privacy Policy</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Regulations</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Risk Disclaimer</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Complaints Procedure</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Company News</a></li>
-                                                <li><a href="{{ asset('') }}index.html">Trading Videos</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                
                             </div>
-                            <div class="footer-lower">
-                                <figure class="footer-logo"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo2.png" style="width: 130px;" alt=""></a></figure>
-                                <ul class="footer-card clearfix">
-                                    <li><h4>We Accept:</h4></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-1.png" alt=""></a></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-2.png" alt=""></a></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-3.png" alt=""></a></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-4.png" alt=""></a></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-5.png" alt=""></a></li>
-                                    <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/card-6.png" alt=""></a></li>
-                                </ul>
-                            </div>
+                           
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget centred ml_80">
-                                <div class="widget-content">
-                                    <figure class="footer-logo mb_15"><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/img/logo/logo2.png" style="width: 130px;" alt=""></a></figure>
-                                    <p>Trade multipliers on our app.</p>
-                                    <div class="scanner-box mb_30"><img src="{{ asset('') }}assets/images/icons/icon-3.png" alt=""></div>
-                                    <ul class="download-list clearfix">
-                                        <li><a href="{{ asset('') }}index.html"><i class="fab fa-apple"></i></a></li>
-                                        <li><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/icons/icon-2.png" alt=""></a></li>
-                                        <li><a href="{{ asset('') }}index.html"><i class="fab fa-android"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -122,3 +83,16 @@
                 </div>
             </div>
         </footer>
+<floatul style="margin-left: 55px; margin-bottom: 150px;">
+    <li>
+        <a href="https://api.whatsapp.com/send/?phone=443308087484&text&type=phone_number&app_absent=0">
+        <img src="assets/images/icons/whatsapp_icon.webp"></a>
+    </li>
+</floatul>
+<div id="testdiv">
+    <a href="https://api.whatsapp.com/send/?phone=443308087484&text&type=phone_number&app_absent=0" target="_blank">
+        <div class="whatsapp_chat1">
+            <i class="fab fa-whatsapp" style="font-size: 40px;color:#FFFFFF"></i>
+        </div>
+    </a>
+</div>

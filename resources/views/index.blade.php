@@ -68,10 +68,10 @@
                 <div class="content-box p_relative">
                     <div class="overlay"></div>
                     <div class="text-content">
-                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                        <h2>Make Every Trade with Wundersys Capital Limited</h2>
+                        <p>Whether you are into Forex, Commodities, Stocks, Indices or Digital Assets, we’ve got you covered</p>
                         <div class="btn-box">
-                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
+                            <!-- <a href="#" class="theme-btn btn-one">Create Account</a> -->
                         </div>
                     </div>
                 </div>
@@ -86,32 +86,15 @@
                 <div class="content-box p_relative">
                     <div class="overlay"></div>
                     <div class="text-content">
-                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                        <h2>Navigate the Global markets with a platform built for performance</h2>
+                        <p>Get the most accurate market data, alerts, conversions and tools - all within a platform that adapts to your trading needs</p>
                         <div class="btn-box">
-                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
+                            <!-- <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide-item p_relative">
-                <div class="bg-layer">
-                    <video autoplay loop muted playsinline class="video-bg">
-                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="content-box p_relative">
-                    <div class="overlay"></div>
-                    <div class="text-content">
-                        <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                        <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
-                        <div class="btn-box">
-                            <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
