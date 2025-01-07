@@ -23,7 +23,7 @@
                 <div class="sec-title pb_50">
                     <span class="sub-title mb_14">Accounts</span>
                     <h2 class="mb_14">Choose from Standard or Premium account, each with their unique features and benefits.</h2>
-                    <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-12 account-block">

@@ -92,7 +92,7 @@
                         <div class="content_block_eight">
                             <div class="content-box ml_60">
                                 <div class="sec-title pb_20">
-                                <span class="sub-title mb_14">Open your Standard Account with Neex</span>
+                                <span class="sub-title mb_14">Open your Standard Account with Wundersys Capital Limited</span>
                                     <h2>We prioritise providing a superior <span>trading environment</span> equipped with the latest technology and a wide array of <span>trading instruments</span>. Our standard account is designed to ensure seamless execution and <span>competitive spreads.</span></h2><br>
                                     </div>
                             </div>
@@ -113,7 +113,7 @@
                                     <h2>Open a Wundersys Capital Limited account in 3 simple steps.</h2>
                                     <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
-                                <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 
                             </div>
                         </div>

@@ -60,7 +60,7 @@
                                         </div>
                                         <div class="acc-content">
                                             <div class="content">
-                                                <p>Our leadership team brings decades of experience in the Forex, CFD, and Equity markets across the globe. They leverage this expertise to curate the best technology solutions and partner with top-tier pricing providers, ensuring a superior experience for every Neex trader.</p>
+                                                <p>Our leadership team brings decades of experience in the Forex, CFD, and Equity markets across the globe. They leverage this expertise to curate the best technology solutions and partner with top-tier pricing providers, ensuring a superior experience for every Wundersys Capital Limited trader.</p>
                                                 
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@
                                         <li>Seamlessly manage your account and portfolio</li>
                                         <li>Stay ahead with real-time charts and indicators</li>
                                     </ul>
-                                    <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                                         <li>Integrity & Trust</li>
                                         <li>Exceptional Service</li>
                                     </ul>
-                                    <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 </div>
                             </div>
                         </div>
@@ -285,9 +285,10 @@
 
 
         <!-- apps-style-two -->
+       
         <section class="apps-style-two pt_150 pb_150">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
-            <figure class="image-layer"><img src="{{ asset('') }}assets/images/resource/mockup-1.png" alt=""></figure>
+            <figure class="image-layer"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
             <div class="auto-container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12 col-sm-12 content-column">
@@ -299,12 +300,12 @@
                                     <p>We use cookines to understand how you use our website and to give you the best possible experience.</p>
                                 </div>
                                 <div class="btn-box">
-                                    <a href="about.html" class="apple-store">
+                                    <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=WundersysCapital-Live" class="apple-store">
                                         <img src="{{ asset('') }}assets/images/icons/icon-7.png" alt="">
                                         <span>Download on</span>
                                         App Store
                                     </a>
-                                    <a href="about.html" class="play-store">
+                                    <a href="https://download.mql5.com/cdn/mobile/mt5/android?server=WundersysCapital-Live" class="play-store">
                                         <img src="{{ asset('') }}assets/images/icons/icon-8.png" alt="">
                                         <span>Get it on</span>
                                         Google Play

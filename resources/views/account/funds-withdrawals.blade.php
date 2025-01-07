@@ -262,7 +262,7 @@
                                     <h2>Multiple Deposit Methods</span></h2>
                                 </div>
                                 <div class="text-box">
-                                    <p>Fund your account using various methods, including debit card, credit card (Visa, MasterCard), or Bank Wire Transfer. Deposits can be made online via the Client's trading portal, accessible through the Neex website.</p>
+                                    <p>Fund your account using various methods, including debit card, credit card (Visa, MasterCard), or Bank Wire Transfer. Deposits can be made online via the Client's trading portal, accessible through the Wundersys Capital Limited website.</p>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +288,7 @@
                                     <h2>Open a Wundersys Capital Limited account in 3 simple steps.</h2>
                                     <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
-                                <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 
                             </div>
                         </div>

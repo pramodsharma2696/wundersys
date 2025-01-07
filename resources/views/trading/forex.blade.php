@@ -25,7 +25,7 @@
                             <div class="content-box ml_60">
                                 <div class="sec-title pb_20">
                                     <h2>Trade major, minor, and exotic currency pairs with leverage up to <span>1:500</span></h2>
-                                    <p>Open an account with Neex today and benefit from our commitment to protecting your funds.</p>
+                                    <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
                                 <a href="#" class="theme-btn btn-one">Get Started</a>
                                 
@@ -74,9 +74,9 @@
                                         <li>The market operates 24/5, enabling you to trade at your own time and pace.</li>
                                         <li>Traders of all experience levels are welcome, whether you're beginning with just a few dollars or investing thousands. The choice is yours.
                                         </li>
-                                        <li>Benefit from Neex's offering of over 60 + currency pairs, including major, minor, and exotic trades.</li>
+                                        <li>Benefit from Wundersys Capital Limited's offering of over 60 + currency pairs, including major, minor, and exotic trades.</li>
                                     </ul>
-                                    <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 </div>
                             </div>
                         </div>

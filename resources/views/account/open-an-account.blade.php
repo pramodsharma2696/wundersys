@@ -62,7 +62,7 @@
                 <div class="sec-title pb_50">
                     <span class="sub-title mb_14">Accounts</span>
                     <h2 class="mb_14">Choose from Standard or Premium account, each with their unique features and benefits.</h2>
-                    <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-12 account-block">
@@ -117,7 +117,7 @@
                                     <h2>Open a Wundersys Capital Limited account in 3 simple steps.</h2>
                                     <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
-                                <a href="index-3.html" class="theme-btn btn-one">Open an Account</a>
+                                <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
                                 
                             </div>
                         </div>

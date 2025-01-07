@@ -25,29 +25,29 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info">
                                 <div class="icon-box"><i class="icon-45"></i></div>
-                                <h4>Corporate Office</h4>
-                                <p>0233 Brisbane Cir. Shiloh,Australia 81063</p>
+                                <h4>Registered address:</h4>
+                                <p>Ground Floor, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info">
                                 <div class="icon-box"><i class="icon-45"></i></div>
-                                <h4>Main Warehouse</h4>
-                                <p>10445 Brisbane Cir. Shiloh, Australia</p>
+                                <h4>Physical address:</h4>
+                                <p>B32, B-Block, Green Park Avenue, Fairlands, Salem-636016, Tamil Nadu, India</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info">
                                 <div class="icon-box"><i class="icon-46"></i></div>
                                 <h4>Email Address</h4>
-                                <p><a href="mailto:support@example.com">support@example.com</a><a href="mailto:contact@example.com">contact@example.com</a></p>
+                                <p><a href="mailto:support@wundersyscapital.com">support@wundersyscapital.com</a></p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info">
                                 <div class="icon-box"><i class="icon-47"></i></div>
                                 <h4>Phone Number</h4>
-                                <p><a href="tel:+2085440141">+(208) 544 -0141</a><a href="tel:+2085440142">+(208) 544 -0142</a></p>
+                                <p><a href="tel:+91 427 355 6256">+91 427 355 6256</a></p>
                             </div>
                         </div>
                     </div>
