@@ -28,17 +28,17 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget">
                                 <div class="widget-title mb_11">
-                                    <h3>About Us</h3>
+                                    <h3>Useful Links</h3>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-
-                                        <li><a href="{{ asset('') }}index.html">Contact us</a></li>
-                                        <li><a href="{{ asset('') }}index.html">Forex</a></li>
-                                        <li><a href="{{ asset('') }}index.html">Equities</a></li>
-                                        <li><a href="{{ asset('') }}index.html">Indices</a></li>
-                                        <li><a href="{{ asset('') }}index.html">Commodities</a></li>
-                                        <li><a href="{{ asset('') }}contact.html">Cryptocurrencies</a></li>
+                                        <li><a href="{{ url('why-choose-us') }}">Why Choose Wundersys?</a></li>
+                                        <li><a href="{{ url('news') }}">Company News</a></li>
+                                        <li><a href="{{ url('security-funds') }}">Security of Funds</a></li>
+                                        <li><a href="{{ url('forex') }}">Forex</a></li>
+                                        <li><a href="{{ url('commodities') }}">Commodities</a></li>
+                                        <li><a href="{{ url('indices') }}">Indices</a></li>
+                                        <li><a href="{{ url('/contact-us') }}">Contact us</a></li>
 
                                     </ul>
                                 </div>
@@ -91,7 +91,7 @@
                     <li>
                         <h5>Follow Us On:</h5>
                     </li>
-                    <li><a href="{{ asset('') }}index.html"><i class="icon-12"></i></a></li>
+                    <li><a href="{{ url('contact-us') }}"><i class="icon-12"></i></a></li>
                     <li><a href="{{ asset('') }}index.html"><i class="icon-13"></i></a></li>
                     <li><a href="{{ asset('') }}index.html"><i class="icon-14"></i></a></li>
                     <li><a href="{{ asset('') }}index.html"><i class="icon-15"></i></a></li>

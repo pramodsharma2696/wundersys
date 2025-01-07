@@ -2741,7 +2741,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                         <div class="image-box">
-                            <figure class="image image-hov-two"><img src="assets/images/resource/process-1.jpg" alt=""></figure>
+                            <figure class="image image-hov-two"><img src="assets/image/how-it-works.png" style="width: 318px;height: auto;margin-left: 200px;" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -2760,7 +2760,7 @@
     <div class="auto-container">
         <div class="inner-container">
             <div class="shape" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-            <figure class="image-layer"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
+            <figure class="image-layer"><img src="{{ asset('') }}assets/image/download-light.png" style="width:455px;height: auto;margin-bottom:25px" alt=""></figure>
             <div class="content_block_two">
                 <div class="content-box">
                     <div class="sec-title light pb_40">

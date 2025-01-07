@@ -288,7 +288,7 @@
        
         <section class="apps-style-two pt_150 pb_150">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
-            <figure class="image-layer"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
+            <figure class="image-layer" style="right: 250px !important;"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
             <div class="auto-container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12 col-sm-12 content-column">
