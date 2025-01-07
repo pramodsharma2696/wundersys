@@ -57,6 +57,7 @@
                                                 <li><a href="{{ url('forex') }}">Forex</a></li>
                                                 <li><a href="{{ url('commodities') }}">Commodities</a></li>
                                                 <li><a href="{{ url('indices') }}">Indices</a></li>
+                                                <li><a href="{{ url('cryptocurrencies') }}">Cryptocurrencies</a></li>
                                                 <!-- <li><a href="{{ url('us-stocks') }}">US Stocks</a></li> -->
                                             </ul>
                                         </li>
@@ -75,6 +76,9 @@
                                 <li class="dropdown"><a href="#">Tools</a>
                                     <ul>
                                         <li><a href="{{ url('/profit-calculator') }}">Profit Calculator</a></li>
+                                        <li><a href="{{ url('/margin-calculator') }}">Margin Calculator</a></li>
+                                        <li><a href="{{ url('/pip-calculator') }}"> Pip Calculator</a></li>
+                                        
                                     </ul>
                                 </li> 
                                 <li><a href="{{ url('contact-us') }}">Contact</a></li>

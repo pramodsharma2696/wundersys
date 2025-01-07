@@ -42,6 +42,9 @@ Route::get('/forex', function () {
 Route::get('/commodities', function () {
     return view('trading.commodities');
 });
+Route::get('/cryptocurrencies', function () {
+    return view('trading.cryptocurrencies');
+});
 Route::get('/indices', function () {
     return view('trading.indices');
 });
@@ -72,5 +75,11 @@ Route::get('/funds-withdrawals', function () {
 
 Route::get('/profit-calculator', function () {
     return view('tools.profit-calculator');
+});
+Route::get('/margin-calculator', function () {
+    return view('tools.margin-calculator');
+});
+Route::get('/pip-calculator', function () {
+    return view('tools.pip-calculator');
 });
 

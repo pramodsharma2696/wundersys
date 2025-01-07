@@ -125,6 +125,82 @@
                                 </div>
                             </div>
                         </li>
+
+
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>What is Cryptocurrency?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>Cryptocurrency is a form of digital or virtual currency that uses cryptography for security. Bitcoin, Ethereum, and Litecoin are examples of well-known cryptocurrencies.</p>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>How do Crypto trading work?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>Crypto trading involves buying and selling digital currencies through exchanges like Binance or Coinbase. Traders speculate on the price movements of cryptocurrencies to generate profit.</p>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>What is a Cryptocurrency wallet?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>A cryptocurrency wallet is a software program that stores your private and public keys and interacts with various blockchain networks to enable you to send and receive digital currencies.</p>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>What are Stocks?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>Stocks represent ownership in a company. When you buy a company's stock, you're buying a small piece of that company. Stockholders can earn dividends or make money by selling stocks at a higher price than they bought them for.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>How do Stock trading work?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>Forex, short for foreign exchange, refers to the global marketplace for buying and selling currencies. It's the largest and most liquid financial market in the world.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-box"><i class="icon-29"></i></div>
+                                <h5>What is the difference between stocks and ETFs?</h5>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                <p>Stocks represent ownership in a single company, whereas ETFs (Exchange-Traded Funds) hold a collection of assets such as stocks, bonds, or commodities. ETFs are traded like stocks but provide diversification across multiple assets.</p>
+
+                                </div>
+                            </div>
+                        </li>
                        
                     </ul>
                 </div>
