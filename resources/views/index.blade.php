@@ -28,7 +28,7 @@
     .content-box1 {
         left: -4%;
         /* Adjust percentage as needed for spacing */
-        margin-top: 18%;
+        margin-top: 25%;
         transform: translateY(-50%);
     }
 
