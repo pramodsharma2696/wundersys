@@ -61,7 +61,7 @@
                                                 <!-- <li><a href="{{ url('us-stocks') }}">US Stocks</a></li> -->
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('account') }}">Accounts</a>
+                                        <li class="dropdown"><a href="#">Accounts</a>
                                             <ul>
                                                 <li><a href="{{ url('all-accounts') }}">All Accounts</a></li>
                                                 <li><a href="{{ url('standard-account') }}">Standard Account</a></li>
