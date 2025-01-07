@@ -158,7 +158,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
-                        <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div>
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div> -->
                         <h3><a href="{{ url('/standard-account') }}">Standard Account</a></h3><br>
                         <div class="content-box">
                             <ul class="list-item clearfix">
@@ -204,7 +204,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
-                        <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div>
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div> -->
                         <h3><a href="{{ url('/standard-account') }}">ECN Account</a></h3><br>
                         <div class="content-box">
                             <ul class="list-item clearfix">
@@ -250,7 +250,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
-                        <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div>
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
                         <h3><a href="{{ url('/standard-account') }}">VIP Account</a></h3><br>
                         <div class="content-box">
                             <ul class="list-item clearfix">
