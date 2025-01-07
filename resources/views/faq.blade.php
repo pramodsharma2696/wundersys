@@ -128,7 +128,7 @@
 
 
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>What is Cryptocurrency?</h5>
                             </div>
@@ -141,7 +141,7 @@
                             </div>
                         </li>
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>How do Crypto trading work?</h5>
                             </div>
@@ -154,7 +154,7 @@
                             </div>
                         </li>
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>What is a Cryptocurrency wallet?</h5>
                             </div>
@@ -167,7 +167,7 @@
                             </div>
                         </li>
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>What are Stocks?</h5>
                             </div>
@@ -178,7 +178,7 @@
                             </div>
                         </li>
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>How do Stock trading work?</h5>
                             </div>
@@ -190,7 +190,7 @@
                             </div>
                         </li>
                         <li class="accordion block active-block">
-                            <div class="acc-btn active">
+                            <div class="acc-btn ">
                                 <div class="icon-box"><i class="icon-29"></i></div>
                                 <h5>What is the difference between stocks and ETFs?</h5>
                             </div>
