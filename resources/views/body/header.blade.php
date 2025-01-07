@@ -30,7 +30,7 @@
     <div class="header-lower">
         <div class="large-container">
             <div class="outer-box">
-                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo1.jpg" alt="" class="img-size" style="width:140px"></a></figure>
+                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo6.jpg" alt="" class="img-size"></a></figure>
                 <div class="menu-area">
                     <!--Mobile Navigation Toggler-->
                     <div class="mobile-nav-toggler">
