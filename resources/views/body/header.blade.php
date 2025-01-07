@@ -42,7 +42,7 @@
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li class="current dropdown"><a href="{{ url('/') }}">Home</a>  
-                                <li class="dropdown"><a href="{{ url('about-us') }}">Company</a>
+                                <li class="dropdown"><a href="#">Company</a>
                                     <ul>
                                         <li><a href="{{ url('why-choose-us') }}" style="letter-spacing: 0px;">Why Choose Wundersys?</a></li>
                                         <li><a href="{{ url('news') }}">Company News</a></li>
@@ -67,7 +67,7 @@
                                                 <li><a href="{{ url('standard-account') }}">Standard Account</a></li>
                                                 <li><a href="{{ url('primium-account') }}">Primium Account</a></li>
                                                 <li><a href="{{ url('open-an-account') }}">Open an Account</a></li>
-                                                <li><a href="{{ url('funds-withdrawals') }}">Funds & Withdrawals</a></li>
+                                                <li><a href="{{ url('funds-withdrawals') }}" style="letter-spacing: 0px;">Funds & Withdrawals</a></li>
                                             </ul>
                                         </li>
                                         
@@ -86,7 +86,7 @@
                             </ul>
                         </div>
                     </nav>
-                    <div class="search-btn ml_30"><button class="search-toggler"><i class="icon-10"></i></button></div>
+                    <!-- <div class="search-btn ml_30"><button class="search-toggler"><i class="icon-10"></i></button></div> -->
                 </div>
             </div>
         </div>
@@ -98,12 +98,12 @@
     <div class="sticky-header">
         <div class="large-container">
             <div class="outer-box">
-                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo5.jpg" alt="" class="img-size"></a></figure>
+                <figure class="logo-box"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo6.jpg" alt="" class="img-size"></a></figure>
                 <div class="menu-area">
                     <nav class="main-menu clearfix">
                         <!--Keep This Empty / Menu will come through Javascript-->
                     </nav>
-                    <div class="search-btn ml_30"><button class="search-toggler"><i class="icon-10"></i></button></div>
+                    <!-- <div class="search-btn ml_30"><button class="search-toggler"><i class="icon-10"></i></button></div> -->
                 </div>
             </div>
         </div>

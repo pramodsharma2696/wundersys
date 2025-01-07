@@ -55,7 +55,7 @@
 
 
 <!-- banner-section -->
-<section class="banner-section p_relative pt_20">
+<section class="banner-section p_relative">
     <div class="large-container">
         <div class="banner-carousel owl-theme owl-carousel owl-nav-none">
             <div class="slide-item p_relative">

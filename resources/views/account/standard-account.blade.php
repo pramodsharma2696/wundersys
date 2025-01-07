@@ -113,7 +113,7 @@
                                     <h2>Open a Wundersys Capital Limited account in 3 simple steps.</h2>
                                     <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
-                                <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
+                                <!-- <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a> -->
                                 
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;">Open an Account</a>
                 </div>
             </div>
         </section>
