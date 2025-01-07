@@ -47,7 +47,7 @@
                             <div class="single-info">
                                 <div class="icon-box"><i class="icon-47"></i></div>
                                 <h4>Phone Number</h4>
-                                <p><a href="tel:+91 427 355 6256">+91 427 355 6256</a></p>
+                                <p><a href="tel:+443308087484"> +44 330 808 7484</a></p>
                             </div>
                         </div>
                     </div>

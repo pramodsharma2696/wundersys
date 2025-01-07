@@ -399,41 +399,41 @@
             <div class="trading-block-one">
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-1.png" alt=""></figure>
-                    <h3><a href="{{ asset('') }}markets-details.html">Crypto Trading</a></h3>
+                    <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Crypto Trading</a></h3>
                     <p>One of the primary methods of gold trading is through the spot</p>
-                    <div class="btn-box"><a href="{{ asset('') }}markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
             <div class="trading-block-one">
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-2.png" alt=""></figure>
-                    <h3><a href="{{ asset('') }}markets-details.html">Shares Trading</a></h3>
+                    <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Shares Trading</a></h3>
                     <p>One of the primary methods of gold trading is through the spot</p>
-                    <div class="btn-box"><a href="{{ asset('') }}markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
             <div class="trading-block-one">
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-3.png" alt=""></figure>
-                    <h3><a href="{{ asset('') }}markets-details.html">Gold Trading</a></h3>
+                    <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Gold Trading</a></h3>
                     <p>One of the primary methods of gold trading is through the spot</p>
-                    <div class="btn-box"><a href="{{ asset('') }}markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
             <div class="trading-block-one">
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-4.png" alt=""></figure>
-                    <h3><a href="{{ asset('') }}markets-details.html">Currency Trading</a></h3>
+                    <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Currency Trading</a></h3>
                     <p>One of the primary methods of gold trading is through the spot</p>
-                    <div class="btn-box"><a href="{{ asset('') }}markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
             <div class="trading-block-one">
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-5.png" alt=""></figure>
-                    <h3><a href="{{ asset('') }}markets-details.html">Silver Trading</a></h3>
+                    <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Silver Trading</a></h3>
                     <p>One of the primary methods of gold trading is through the spot</p>
-                    <div class="btn-box"><a href="{{ asset('') }}markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
         </div>
