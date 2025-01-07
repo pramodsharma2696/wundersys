@@ -51,6 +51,11 @@
         position: relative;
         z-index: 2;
     }
+    @media only screen and (max-width: 599px){
+    .process-section .image-box .image{
+        display: none !important;
+    }
+}
 </style>
 
 
