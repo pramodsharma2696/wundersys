@@ -42,6 +42,7 @@
 <link href="{{ asset('') }}assets/css/module-css/news.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/team.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/cta.css" rel="stylesheet">
+<link href="{{ asset('') }}assets/css/module-css/faq.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/contact.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/page-title.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/subscribe.css" rel="stylesheet">
@@ -142,17 +143,17 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-                    <figure class="logo-box p_relative z_1"><a href="{{ asset('') }}index.html"><img src="{{ asset('') }}assets/images/logo.png" alt=""></a></figure>
+                    <figure class="logo-box p_relative z_1"><a href="{{ url('/') }}"><img src="{{ asset('') }}assets/img/logo/logo1.jpg" style="width:140px" alt=""></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
                 <div class="auto-container">
                     <div class="search-form">
-                        <form method="post" action="https://azim.hostlin.com/Fortradex/index.html">
+                        <form method="post" action="#">
                             <div class="form-group">
                                 <fieldset>
                                     <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required >
-                                    <button type="submit"><i class="icon-10"></i></button>
+                                    <button type="button"><i class="icon-10"></i></button>
                                 </fieldset>
                             </div>
                         </form>

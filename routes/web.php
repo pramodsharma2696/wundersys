@@ -66,3 +66,11 @@ Route::get('/open-an-account', function () {
 Route::get('/funds-withdrawals', function () {
     return view('account.funds-withdrawals');
 });
+
+
+// Tools
+
+Route::get('/profit-calculator', function () {
+    return view('tools.profit-calculator');
+});
+

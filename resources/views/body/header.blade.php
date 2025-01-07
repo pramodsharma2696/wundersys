@@ -49,6 +49,7 @@
                                         <li><a href="{{ url('security-funds') }}">Security of Funds</a></li>
                                     </ul>
                                 </li>                              </li>
+                                                            </li>
                                 <li class="dropdown"><a href="#">Trading</a>
                                     <ul>
                                         <li class="dropdown"><a href="{{ url('forex') }}">Products</a>
@@ -71,7 +72,11 @@
                                         
                                     </ul>
                                 </li>
-                               
+                                <li class="dropdown"><a href="#">Tools</a>
+                                    <ul>
+                                        <li><a href="{{ url('/profit-calculator') }}">Profit Calculator</a></li>
+                                    </ul>
+                                </li> 
                                 <li><a href="{{ url('contact-us') }}">Contact</a></li>
 						        <li><a href="{{ url('faq') }}">FAQ</a></li>
                             </ul>
