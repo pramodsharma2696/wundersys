@@ -41,58 +41,39 @@
                     <nav class="main-menu navbar-expand-md navbar-light clearfix">
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="{{ asset('') }}index.html">Home</a>                                </li>
+                                <li class="current dropdown"><a href="{{ url('/') }}">Home</a>  
+                                <li class="dropdown"><a href="{{ url('about-us') }}">Company</a>
+                                    <ul>
+                                        <li><a href="{{ url('why-choose-us') }}" style="letter-spacing: 0px;">Why Choose Wundersys?</a></li>
+                                        <li><a href="{{ url('news') }}">Company News</a></li>
+                                        <li><a href="{{ url('security-funds') }}">Security of Funds</a></li>
+                                    </ul>
+                                </li>                              </li>
                                 <li class="dropdown"><a href="#">Trading</a>
                                     <ul>
-                                        <li class="dropdown"><a href="{{ url('forex') }}">Instruments</a>
+                                        <li class="dropdown"><a href="{{ url('forex') }}">Products</a>
                                             <ul>
                                                 <li><a href="{{ url('forex') }}">Forex</a></li>
-                                                <li><a href="{{ url('equities') }}">Equities</a></li>
-                                                <li><a href="{{ url('indices') }}">Indices</a></li>
                                                 <li><a href="{{ url('commodities') }}">Commodities</a></li>
-                                                <li><a href="{{ url('cryptocurrencies') }}">Cryptocurrencies</a></li>
+                                                <li><a href="{{ url('indices') }}">Indices</a></li>
+                                                <!-- <li><a href="{{ url('us-stocks') }}">US Stocks</a></li> -->
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('account') }}">Account Types</a>
+                                        <li class="dropdown"><a href="{{ url('account') }}">Accounts</a>
                                             <ul>
-                                                <li><a href="{{ url('account#std_account') }}">Standard Account</a></li>
-                                                <li><a href="{{ url('account#prime_account') }}">Prime Account</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="{{ url('account') }}">Platform</a>
-                                            <ul>
-                                                <li><a href="{{ url('metatrader5') }}"> MetaTrader 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="{{ url('tools') }}">Tools</a>
-                                            <ul>
-                                                <li><a href="{{ url('tools#Autochartist') }}">Autochartist </a></li>
-                                                <li><a href="{{ url('tools#vps') }}">VPS</a></li>
-                                                <li><a href="{{ url('tools#mql5') }}">MQL 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="{{ url('conditions') }}">Conditions</a>
-                                            <ul>
-                                                <li><a href="{{ url('conditions#leverage') }}">Leverage </a></li>
-                                                <li><a href="{{ url('conditions#swaps') }}">Swaps</a></li>
-                                                <li><a href="{{ url('conditions#rollovers') }}">Rollovers</a></li>
-                                                <li><a href="{{ url('conditions#dividends') }}">Dividends</a></li>
-                                                <li><a href="{{ url('conditions#market') }}">Market Notifications</a></li>
-                                                <li><a href="{{ url('conditions#product') }}">Product Information</a></li>
+                                                <li><a href="{{ url('all-accounts') }}">All Accounts</a></li>
+                                                <li><a href="{{ url('standard-account') }}">Standard Account</a></li>
+                                                <li><a href="{{ url('primium-account') }}">Primium Account</a></li>
+                                                <li><a href="{{ url('open-an-account') }}">Open an Account</a></li>
+                                                <li><a href="{{ url('funds-withdrawals') }}">Funds & Withdrawals</a></li>
                                             </ul>
                                         </li>
                                         
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="{{ url('about-us') }}">Company</a>
-                                    <ul>
-                                        <li><a href="{{ url('about-us') }}#about_company">About Company</a></li>
-                                        <li><a href="{{ url('about-us') }}#our_brand">Our Brand Values</a></li>
-                                        <li><a href="{{ url('about-us') }}#3step">3 Step Process</a></li>
-                                    </ul>
-                                </li>
+                               
                                 <li><a href="{{ url('contact-us') }}">Contact</a></li>
-						        <li><a href="{{ url('FAQ') }}">FAQ</a></li>
+						        <li><a href="{{ url('faq') }}">FAQ</a></li>
                             </ul>
                         </div>
                     </nav>
