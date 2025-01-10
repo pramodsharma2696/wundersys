@@ -80,7 +80,7 @@
 }
 
 .header-style-one .main-menu .navigation > li > a{
-  /* border: 1px solid var(--secondary-color); */
+  border: 1px solid var(--secondary-color);
   border-radius: 40px;
   padding: 2px 20px;
 }
@@ -90,7 +90,7 @@
 }
 
 .header-style-one .main-menu .navigation > li{
-  margin: 0px 0px;
+  margin: 0px 5px;
 }
 
 .header-bottom .bottom-inner{

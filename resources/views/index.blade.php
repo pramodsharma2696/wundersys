@@ -53,7 +53,7 @@
     font-weight: 600;
     color: #fff;
     background-color: #36a4cb; /* Adjust button color */
-    border-top: 4px solid #333;
+    /* border-top: 4px solid #333; */
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
