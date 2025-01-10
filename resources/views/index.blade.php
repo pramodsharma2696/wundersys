@@ -27,7 +27,7 @@
     .content-box1 {
         left: -4%;
         /* Adjust percentage as needed for spacing */
-        margin-top: 48%;
+        margin-top: 42%;
         transform: translateY(-50%);
     }
 .banner-section .content-box1 {
