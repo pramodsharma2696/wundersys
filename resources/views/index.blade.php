@@ -154,7 +154,7 @@
 <!-- account-section -->
 <section class="account-section pt_100 pb_100">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-    <div class="auto-container">
+    <div class="auto-container" style="max-width: 1600px !important;">
         <div class="sec-title pb_60 centred">
             <span class="sub-title mb_14">Accounts</span>
             <h2>Wundersys Capital Limited Trading Accounts</h2>
