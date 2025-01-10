@@ -1,7 +1,6 @@
 @extends('master')
 @section('contents')
 <style>
-    /* Video background styling */
     .video-bg {
         position: absolute;
         top: 0;
@@ -11,7 +10,7 @@
         object-fit: cover;
         z-index: -1;
     }
-
+    
     /* Content box styling */
     .content-box1 {
         position: relative;
@@ -28,39 +27,52 @@
     .content-box1 {
         left: -4%;
         /* Adjust percentage as needed for spacing */
-        margin-top: 25%;
+        margin-top: 50%;
         transform: translateY(-50%);
     }
+.banner-section .content-box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
-    /* Overlay styling */
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        /* Adjust opacity for desired effect */
-        z-index: 1;
-        border-radius: 10px;
-        /* Optional: Add rounded corners */
-    }
+.banner-section .btn-box {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Text content styling */
-    .text-content {
-        position: relative;
-        z-index: 2;
-    }
-    @media only screen and (max-width: 599px){
-    .process-section .image-box .image{
-        display: none !important;
-    }
+.banner-section .btn-one,
+.banner-section .btn-two {
+    display: inline-block;
+    padding: 12px 60px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #36a4cb; /* Adjust button color */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-section .btn-one:hover,
+.banner-section .btn-two:hover {
+    background-color: #0056b3; /* Adjust hover color */
+}
+
+.bg-layer video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .account-block-one .inner-box{
-    height: 600px !important;
+    height: 620px !important;
+/* background: #48b2da !important; */
 }
 </style>
-
 
 <!-- banner-section -->
 <section class="banner-section p_relative">
@@ -69,40 +81,17 @@
             <div class="slide-item p_relative">
                 <div class="bg-layer">
                     <video autoplay loop muted playsinline class="video-bg">
-                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
+                        <source src="{{ asset('') }}assets/img/wc.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="content-box1 p_relative">
-                    <div class="overlay"></div>
-                    <div class="text-content">
-                        <h2>Make Every Trade with Wundersys Capital Limited</h2>
-                        <p>Whether you are into Forex, Commodities, Stocks, Indices or Digital Assets, we’ve got you covered</p>
-                        <div class="btn-box">
-                            <!-- <a href="#" class="theme-btn btn-one">Create Account</a> -->
-                        </div>
+                    <div class="btn-box">
+                        <a href="/login" class="theme-btn btn-one">Login</a>
+                        <a href="/register" class="theme-btn btn-two">Register</a>
                     </div>
                 </div>
             </div>
-            <div class="slide-item p_relative">
-                <div class="bg-layer">
-                    <video autoplay loop muted playsinline class="video-bg">
-                        <source src="{{ asset('') }}assets/img/currency.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="content-box1 p_relative">
-                    <div class="overlay"></div>
-                    <div class="text-content">
-                        <h2>Navigate the Global markets with a platform built for performance</h2>
-                        <p>Get the most accurate market data, alerts, conversions and tools - all within a platform that adapts to your trading needs</p>
-                        <div class="btn-box">
-                            <!-- <a href="{{ asset('') }}index.html" class="theme-btn btn-one">Create Account</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -112,8 +101,9 @@
 
 
 
+
 <!-- clients-section -->
-<section class="clients-section pt_40 pb_40">
+<section class="clients-section">
     <div class="large-container">
         <div class="tradingview-widget-container" style="width: 100%; height: 100px;">
             <div class="tradingview-widget-container__widget"></div>
@@ -203,6 +193,13 @@
                                         </tr>
                                         
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2" class="text-center">
+                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </ul>
                         </div>
@@ -249,6 +246,13 @@
                                         </tr>
                                         
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td colspan="2" class="text-center">
+                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </ul>
                         </div>
@@ -295,6 +299,13 @@
                                         </tr>
                                         
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td colspan="2" class="text-center">
+                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                                 </table>
                             </ul>
@@ -346,6 +357,13 @@
                                         </tr>
                                         
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td colspan="2" class="text-center">
+                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                                 </table>
                             </ul>

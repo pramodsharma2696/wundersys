@@ -65,7 +65,7 @@
                                             <ul>
                                                 <li><a href="{{ url('all-accounts') }}">All Accounts</a></li>
                                                 <li><a href="{{ url('standard-account') }}">Standard Account</a></li>
-                                                <li><a href="{{ url('primium-account') }}">Primium Account</a></li>
+                                                <li><a href="{{ url('primium-account') }}">Premium Account</a></li>
                                                 <li><a href="{{ url('open-an-account') }}">Open an Account</a></li>
                                                 <li><a href="{{ url('funds-withdrawals') }}" style="letter-spacing: 0px;">Funds & Withdrawals</a></li>
                                             </ul>

@@ -1,6 +1,5 @@
 @extends('master')
 @section('contents')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <style>
     .margin-calculator_remove {
         cursor: pointer;

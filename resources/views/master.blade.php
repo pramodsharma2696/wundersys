@@ -48,6 +48,7 @@
 <link href="{{ asset('') }}assets/css/module-css/subscribe.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/footer.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/responsive.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <style>
     img.img-size2 {
     width: 200px;
