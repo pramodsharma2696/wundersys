@@ -1,6 +1,6 @@
 <header class="main-header header-style-one">
     <!-- header-top -->
-    <div class="header-top">
+    <div class="header-top" style="display: none;">
         <div class="large-container">
             <div class="top-inner">
                 <div class="support-box">
