@@ -1,8 +1,9 @@
 @extends('master')
 @section('contents')
 <style>
+
 .account-block-one .inner-box{
-    height: 200px !important;
+    height: 600px !important;
 }
 </style>
         <!-- page-title -->
@@ -21,88 +22,209 @@
         <!-- page-title end -->
 
 
-        <section class="account-style-three pt_100 pb_70">
-            <div class="auto-container">
-                <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 content-column pb_70">
-                        <div class="content_block_eight">
-                            <div class="content-box ml_60">
-                                <div class="sec-title pb_20">
-                                <span class="sub-title mb_14">Why Have an Account with Wundersys Capital Limited?</span>
-                                <h2>At Wundersys Capital Limited, our clients are always our top priority. We strive to make the process of <span>opening and managing an account</span> as smooth and easy as possible. Our advanced technology ensures a robust and secure experience, allowing traders to fully enjoy their trading journey.</h2>
-                                 
-                                    
-                                </div>
-                                <a href="#" class="theme-btn btn-one">Open an account</a>
-                                
-                            </div>
-                        </div>
-                </div> 
-                <hr>
-                </div>
-            </div>
-        </section>
-        <section class="account-style-three pt_100 pb_70">
-            <div class="auto-container">
-                <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 content-column pb_70">
-                        <div class="content_block_eight">
-                            <div class="content-box ml_60">
-                                <div class="sec-title pb_20">
-                                <span class="sub-title mb_14">Our Accounts</span>
-                                <h2>Benefit from our diverse account offerings, tailored for traders of all experience levels. Each account is designed to match your level of expertise and the amount you can deposit. Enjoy exceptional order execution and cutting-edge trading technology, along with powerful trading tools and expert analysis. </h2>
-                               </div>
-                               
-                                
-                            </div>
-                        </div>
-                </div> 
-                <hr>
-                </div>
-            </div>
-        </section>
-        <section class="account-style-two account-page clear-bg centred pt_80 pb_70">
-            <div class="auto-container">
-                <div class="sec-title pb_50">
-                    <span class="sub-title mb_14">Accounts</span>
-                    <h2 class="mb_14">Choose from Standard or Premium account, each with their unique features and benefits.</h2>
-                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 account-block">
-                        <div class="account-block-two wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-16"></i></div>
-                                <h3><a href="account-details.html">Standard Account</a></h3>
-                                <ul class="feature-list list-style-one clearfix">
-                                    <li>100+ tradable instruments</li>
-                                    <li>Instant execution</li>
-                                    <li>Multiple order types</li>
-                                    <li>Denominate in USD/EUR/GBP</li>
-                                    <li>Spread from 1.2 PIPs* EURUSD</li>
-                                </ul>
-                            </div>
+        <section class="account-section pt_100 pb_100">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+    <div class="auto-container" style="max-width: 1600px !important;">
+        <div class="sec-title pb_60 centred">
+            <span class="sub-title mb_14">Accounts</span>
+            <h2>Account Types</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div> -->
+                        <h3><a href="{{ url('/standard-account') }}">Standard Account</a></h3><br>
+                        <div class="content-box">
+                            <ul class="list-item clearfix">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Initial Deposit</th>
+                                            <td>Minimum $100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Leverage</th>
+                                            <td>to 1:100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lot Size</th>
+                                            <td>Trade Size of 0.01 Lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spread</th>
+                                            <td>Start from 2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Scalping & Hedging</th>
+                                            <td>Permitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Commission</th>
+                                            <td>No commission</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Margin Call & Stop out</th>
+                                            <td>Set at 100% &
+                                            30% Respectively</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 account-block">
-                        <div class="account-block-two wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="icon-box"><i class="icon-17"></i></div>
-                                <h3><a href="account-details.html">Premium Account</a></h3>
-                                <ul class="feature-list list-style-one clearfix">
-                                    <li>100+ tradable instruments</li>
-                                    <li>Premium execution with bank, brokerage, and client liquidity</li>
-                                    <li>Denominate in USD/EUR/GBP</li>
-                                    <li>Spread from 0.0 PIPs* EURUSD</li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div> -->
+                        <h3><a href="{{ url('/standard-account') }}">ECN Account</a></h3><br>
+                        <div class="content-box">
+                            <ul class="list-item clearfix">
+                                <table class="table table-striped">
+                                <tbody>
+                                        <tr>
+                                            <th>Initial Deposit</th>
+                                            <td>Minimum $500</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Leverage</th>
+                                            <td>to 1:100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lot Size</th>
+                                            <td>Trade Size of 0.01 Lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spread</th>
+                                            <td>Start from 1 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Scalping & Hedging</th>
+                                            <td>Permitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Commission</th>
+                                            <td>No commission</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Margin Call & Stop out</th>
+                                            <td>Set at 100% &
+                                            30% Respectively</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
+                        <h3><a href="{{ url('/standard-account') }}">VIP Account</a></h3><br>
+                        <div class="content-box">
+                            <ul class="list-item clearfix">
+                                <table class="table table-striped">
+                                <tbody>
+                                        <tr>
+                                            <th>Initial Deposit</th>
+                                            <td>Minimum $5000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Leverage</th>
+                                            <td>to 1:100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lot Size</th>
+                                            <td>Trade Size of 0.01 Lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spread</th>
+                                            <td>Start from 0.2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Scalping & Hedging</th>
+                                            <td>Permitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Commission</th>
+                                            <td>7$ per lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Margin Call & Stop out</th>
+                                            <td>Set at 100% &
+                                            30% Respectively</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
+                        <h3><a href="{{ url('/standard-account') }}">ELITE Account</a></h3><br>
+                        <div class="content-box">
+                            <ul class="list-item clearfix">
+                                <table class="table table-striped">
+                                <tbody>
+                                        <tr>
+                                            <th>Initial Deposit</th>
+                                            <td>Minimum $25000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Leverage</th>
+                                            <td>to 1:100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lot Size</th>
+                                            <td>Trade Size of 0.01 Lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spread</th>
+                                            <td>Start from 0.2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Scalping & Hedging</th>
+                                            <td>Permitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Commission</th>
+                                            <td>No</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Margin Call & Stop out</th>
+                                            <td>Set at 100% &
+                                            30% Respectively</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
 
         <!-- Trading platform -->
        
@@ -131,7 +253,7 @@
                             <div class="row clearfix">
                                 <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                                     <div class="account-block-one pb_1 wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                        <div class="inner-box">
+                                        <div class="inner-box" style="height: 200px !important;">
                                             <div class="icon-box">
                                             <img src="{{ asset('')}}assets/image/t1.svg" alt="Register">
                                             </div>
@@ -142,7 +264,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                                     <div class="account-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                        <div class="inner-box">
+                                        <div class="inner-box" style="height: 200px !important;">
                                             <div class="icon-box"><img src="{{ asset('')}}assets/image/t2.svg" alt="Fund"></div>
                                             <h3><a href="#">Fund</a></h3>
                                             <p>Fund your trading account depending on the account you choose. Pick out our deposit methods of your choice.</p>
@@ -151,7 +273,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-12 account-block">
                                     <div class="account-block-one pb_1 wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                        <div class="inner-box">
+                                        <div class="inner-box" style="height: 200px !important;">
                                             <div class="icon-box"><img src="{{ asset('')}}assets/image/t3.svg" alt="Start Trading"></div>
                                             <h3><a href="#">Start Trading</a></h3>
                                             <p>Trade 100+ CFD instruments with tight spreads on the industry's most trusted platforms MT5.</p>
