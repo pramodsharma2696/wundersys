@@ -160,7 +160,7 @@
             <h2>Wundersys Capital Limited Trading Accounts</h2>
         </div>
         <div class="row clearfix">
-            <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div> -->
@@ -171,7 +171,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum  25000$</td>
+                                            <td>Minimum $100</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -186,10 +186,6 @@
                                             <td>Start from 2 pips</td>
                                         </tr>
                                         <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -210,7 +206,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div> -->
@@ -221,7 +217,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum  25000$</td>
+                                            <td>Minimum $500</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -236,10 +232,6 @@
                                             <td>Start from 1 pips</td>
                                         </tr>
                                         <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -260,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 account-block">
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                 <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
@@ -271,7 +263,54 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum  25000$</td>
+                                            <td>Minimum $5000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Leverage</th>
+                                            <td>to 1:100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Lot Size</th>
+                                            <td>Trade Size of 0.01 Lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Spread</th>
+                                            <td>Start from 0.2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Scalping & Hedging</th>
+                                            <td>Permitted</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Commission</th>
+                                            <td>7$ per lot</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Margin Call & Stop out</th>
+                                            <td>Set at 100% &
+                                            30% Respectively</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                </table>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
+                        <h3><a href="{{ url('/standard-account') }}">ELITE Account</a></h3><br>
+                        <div class="content-box">
+                            <ul class="list-item clearfix">
+                                <table class="table table-striped">
+                                <tbody>
+                                        <tr>
+                                            <th>Initial Deposit</th>
+                                            <td>Minimum $25000</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -295,7 +334,7 @@
                                         </tr>
                                         <tr>
                                             <th>Commission</th>
-                                            <td>7$ per lot</td>
+                                            <td>No</td>
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
