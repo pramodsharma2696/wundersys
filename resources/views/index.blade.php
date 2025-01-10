@@ -56,6 +56,9 @@
         display: none !important;
     }
 }
+.account-block-one .inner-box{
+    height: 600px !important;
+}
 </style>
 
 

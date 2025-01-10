@@ -1,6 +1,10 @@
 @extends('master')
 @section('contents')
-
+<style>
+.account-block-one .inner-box{
+    height: 200px !important;
+}
+</style>
         <!-- page-title -->
         <section class="page-title centred pt_90 pb_0">
             <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-34.png);"></div>
