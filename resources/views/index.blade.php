@@ -171,7 +171,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $100</td>
+                                            <td>Minimum  25000$</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -184,6 +184,10 @@
                                         <tr>
                                             <th>Spread</th>
                                             <td>Start from 2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
                                         </tr>
                                         <tr>
                                             <th>Scalping & Hedging</th>
@@ -217,7 +221,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $500</td>
+                                            <td>Minimum  25000$</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -230,6 +234,10 @@
                                         <tr>
                                             <th>Spread</th>
                                             <td>Start from 1 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
                                         </tr>
                                         <tr>
                                             <th>Scalping & Hedging</th>
@@ -263,7 +271,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $5000</td>
+                                            <td>Minimum  25000$</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -276,6 +284,10 @@
                                         <tr>
                                             <th>Spread</th>
                                             <td>Start from 0.2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
                                         </tr>
                                         <tr>
                                             <th>Scalping & Hedging</th>

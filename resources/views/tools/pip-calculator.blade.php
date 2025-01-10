@@ -45,8 +45,8 @@
                                 <label for="deposit-currency" class="form-label">Deposit Currency</label>
                                 <select id="deposit-currency" class="form-select">
                                     <option value="USD" data-symbol="$" selected>USD ($)</option>
-                                    <option value="EUR" data-symbol="€">EUR (€)</option>
-                                    <option value="GBP" data-symbol="£">GBP (£)</option>
+                                    <!-- <option value="EUR" data-symbol="€">EUR (€)</option>
+                                    <option value="GBP" data-symbol="£">GBP (£)</option> -->
                                 </select>
                             </div>
 
