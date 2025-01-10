@@ -233,6 +233,6 @@
 
     <!-- main-js -->
     <script src="{{ asset('') }}assets/js/script.js"></script>
-
+    @stack('scripts')
 </body>
 </html>

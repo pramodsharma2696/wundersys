@@ -76,7 +76,7 @@
                                 <li class="dropdown"><a href="#">Tools</a>
                                     <ul>
                                         <li><a href="{{ url('/profit-calculator') }}">Profit Calculator</a></li>
-                                        <li><a href="{{ url('/margin-calculator') }}">Margin Calculator</a></li>
+                                        <li><a href="{{ url('/margin-calculator') }}" style="letter-spacing: 0px;">Margin Calculator</a></li>
                                         <li><a href="{{ url('/pip-calculator') }}"> Pip Calculator</a></li>
                                         
                                     </ul>
