@@ -212,7 +212,7 @@
         
     </div>
 
-
+    
     <!-- jequery plugins -->
     <script src="{{ asset('') }}assets/js/jquery.js"></script>
     <script src="{{ asset('') }}assets/js/bootstrap.min.js"></script>
@@ -230,9 +230,11 @@
     <script src="{{ asset('') }}assets/js/odometer.js"></script>
     <script src="{{ asset('') }}assets/js/jquery.lettering.min.js"></script>
     <script src="{{ asset('') }}assets/js/jquery.circleType.js"></script>
-
+    
     <!-- main-js -->
-    <script src="{{ asset('') }}assets/js/script.js"></script>
     @stack('scripts')
+    <script src="{{ asset('') }}assets/js/custom.js"></script>
+ 
+    
 </body>
 </html>
