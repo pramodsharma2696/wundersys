@@ -73,6 +73,18 @@
                                         
                                     </ul>
                                 </li>
+                                
+                                <li class="dropdown"><a href="#">Knowledge portal</a>
+                                    <ul>
+                                        <li><a href="{{ url('knowledge-portal') }}#basics" style="letter-spacing: 0px;">Basics of Trading</a></li>
+                                        <li><a href="{{ url('knowledge-portal') }}#fa" style="letter-spacing: 0px;">Fundamental analysis</a></li>
+                                        <li><a href="{{ url('knowledge-portal') }}#ta" style="letter-spacing: 0px;">Technical analysis</a></li>
+                                        <li><a href="{{ url('knowledge-portal') }}#pshyco" style="letter-spacing: 0px;">Trader Psychology</a></li>
+                                        <li><a href="{{ url('forex-glossary') }}" style="letter-spacing: 0px;">Traders Glossary</a></li>                                        
+                                        <li><a href="{{ url('cme-group-education') }}" style="letter-spacing: 0px;">CME Group Education</a></li>
+                                        <!-- <li><a href="{{ url('security-funds') }}">Articles</a></li> -->
+                                    </ul>
+                                </li> 
                                 <li class="dropdown"><a href="#">Tools</a>
                                     <ul>
                                         <li><a href="{{ url('/profit-calculator') }}">Profit Calculator</a></li>

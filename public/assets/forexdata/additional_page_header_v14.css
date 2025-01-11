@@ -1,0 +1,244 @@
+.mf_breadcrumbs_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.additional_page_header_aph { margin-bottom: 30px; }
+.additional_page_header_aph .mf_breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: start;
+    cursor: default;
+}
+.additional_page_header_aph .mf_breadcrumbs,
+.additional_page_header_aph .mf_breadcrumbs a {
+    font-size: 13px;
+    color: #757575;
+}
+.additional_page_header_aph .mf_breadcrumbs a { text-decoration: none; }
+.additional_page_header_aph .mf_breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.mf_breadcrumbs .mfb_logo {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(https://fxn.instaforex.com/i/img/gear.svg) no-repeat;
+    opacity: 0.5;
+    transition: .3s;
+}
+.mf_breadcrumbs .mfb_logo:hover { opacity: 1; }
+.mf_breadcrumbs .mfb_arrow,
+.mf_breadcrumbs .mfb_arrow_ar {
+    width: 10px;
+    height: 11px;
+    margin: 8px;
+    background: url(https://fxn.instaforex.com/i/img/arrow.svg) no-repeat;
+    background-position: 3px 1px;
+}
+.mf_breadcrumbs .mfb_arrow_ar { transform: rotate(180deg); }
+.additional_page_header_aph .mf_header {
+    position: relative;
+    min-height: 130px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    margin-top: 14px;
+    padding: 26px 30px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: default;
+    z-index: 1;
+}
+.additional_page_header_aph .mf_header.mfh_ar {
+    transform: scale(-1, 1);
+    direction: ltr;
+}
+.mf_header.mfh_ar .mfh_text {
+    transform: scale(-1, 1);
+    text-align: right;
+    direction: rtl;
+}
+.mf_header .mfh_darken {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.mf_header .mfh_text {
+    max-width: calc(50% - 20px);
+    text-align: left;
+}
+.mf_header .mfh_title {
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+.mf_header .mfh_desc {
+    font-size: 16px;
+    line-height: 1.3;
+}
+.mf_header .mfh_desc a { color: inherit; }
+.mf_header .mfh_desc a:hover { text-decoration: none; }
+.mf_header .mfh_butt {
+    display: block;
+    padding: 10px 10px 12px 10px;
+    max-width: 220px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: .3s;
+}
+.mf_header .mfh_butt:hover { background: rgba(255, 255, 255, 0.1); }
+
+.additional_page_header_aph .mf_block_slider {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px 0 #ccc;
+}
+.mf_block_slider .mfb_slider {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 436px;
+    margin: 0 auto;
+    height: 80px;
+}
+.mf_block_slider .mfb_prev,
+.mf_block_slider .mfb_next {
+    position: absolute;
+    width: 10px;
+    max-width: 10px;
+    min-width: 10px;
+    height: 18px;
+    margin: 4px;
+    background: url(https://fxn.instaforex.com/i/img/forex_mobile/arrow.svg) no-repeat;
+    top: 28px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: .2s;
+}
+.mf_block_slider .mfb_prev { left: -16px; transform: rotate(180deg); z-index: 1; }
+.mf_block_slider .mfb_next { right: -16px; }
+.mf_block_slider .mfb_prev:hover,
+.mf_block_slider .mfb_next:hover { opacity: 1; }
+.mf_block_slider .mfb_slides {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.mf_block_slider .mfb_slides a {
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+}
+.mf_block_slider .mfb_slides a:hover {
+    opacity: 0.9;
+}
+.mfb_slides .mfb_butt,
+.mfb_slides .mfb_butt_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 0 2px;
+    margin: 0 6px;
+    border-radius: 7px;
+    font-size: .8em;
+    color: #fff;
+}
+.mfb_slides .mfb_butt_icon.mfb_ar { direction: rtl; }
+.mfb_slides .mfb_fast_butt { background: #1f9034; }
+.mfb_slides .mfb_demo_butt { background: #8a8d8d; }
+.mfb_slides .mfb_deposits_butt { background: #D00322; }
+.mfb_slides .mfb_withdrawals_butt { background: #464646; }
+.mfb_slides .mfbbi_icon {
+    width: 28px;
+    max-width: 28px;
+    min-width: 28px;
+    height: 28px;
+}
+.mfb_slides div { margin: 0 6px; }
+.mfb_slides .mfb_deposits_butt .mfbbi_icon {
+    background: url(https://fxn.instaforex.com/i/img/additional_page_header/deposit.svg) no-repeat;
+    background-position: 4px 4px;
+}
+.mfb_slides .mfb_withdrawals_butt .mfbbi_icon {
+    background: url(https://fxn.instaforex.com/i/img/additional_page_header/withdrawal.svg) no-repeat;
+    background-position: 4px 4px;
+}
+.mfb_slides .mfb_img {
+    display: inline-block;
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 40px;
+    background: url(https://fxn.instaforex.com/i/img/additional_page_header/web_platform_icon_6.svg) no-repeat;
+    margin: 0 10px;
+}
+.mfb_slides .mfb_img.mfb_wm { background-position: -520px -50px; }
+.mfb_slides .mfb_img.mfb_as_ru { background-position: 0 -50px; }
+.mfb_slides .mfb_img.mfb_as_en { background-position: -130px -50px; }
+.mfb_slides .mfb_img.mfb_gp_ru { background-position: -260px -50px; }
+.mfb_slides .mfb_img.mfb_gp_en { background-position: -390px -50px; }
+.mfb_slides .mfb_img.webtrader_ru { background-position: -520px 0; }
+.mfb_slides .mfb_img.webtrader_en { background-position: -390px 0; }
+.mfb_slides .mfb_img.ifxbit_ru { background-position: -130px 0; }
+.mfb_slides .mfb_img.ifxbit_en { background-position: 0 0; }
+.mfb_slides .mfb_img.binary { background-position: -260px 0; }
+.mfb_slides .mfb_img.binary_ft { background-position: -650px 0; }
+
+@media (max-width: 800px) {
+    .additional_page_header_aph .mf_header { min-height: auto; }
+    .mf_header .mfh_darken {
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .mf_header .mfh_text { max-width: 100%; }
+    .mf_header .mfh_title,
+    .mf_header .mfh_desc,
+    .mf_header .mfh_butt { color: #fff !important; }
+    .mf_header .mfh_butt { border: 1px solid #fff !important; }
+}
+@media (max-width: 700px) {
+    .additional_page_header_aph .mf_breadcrumbs { justify-content: center; }
+    .mf_header .mfh_text,
+    .mf_header.mfh_ar .mfh_text { text-align: center; }
+    .mf_header .mfh_butt { margin: 25px auto 0; }
+}
+@media (max-width: 530px) {
+    .mf_breadcrumbs_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .additional_page_header_aph .mf_block_slider { padding: 10px 0; }
+    .mf_block_slider .mfb_slider {
+        width: 100%;
+        max-width: 270px;
+        height: 156px;
+    }
+    .mf_block_slider .mfb_slides {
+        flex-direction: column;
+        height: 156px;
+    }
+    .mf_block_slider .mfb_slides a { margin: 6px 0; }
+    .mf_block_slider .mfb_next,
+    .mf_block_slider .mfb_prev { top: calc(50% + -11px); opacity: 1; }
+    .mf_block_slider .mfb_next { right: 6px; }
+    .mf_block_slider .mfb_prev { left: 6px; }
+}

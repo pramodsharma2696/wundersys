@@ -158,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;">Open an Account</a>
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;margin-left: 50%;">Open an Account</a>
                 </div>
             </div>
         </section>

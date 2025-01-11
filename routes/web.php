@@ -83,3 +83,15 @@ Route::get('/pip-calculator', function () {
     return view('tools.pip-calculator');
 });
 
+// knowledge-portal
+
+
+Route::get('/knowledge-portal', function () {
+    return view('knowledge.knowledge-portal');
+});
+Route::get('/forex-glossary', function () {
+    return view('knowledge.forex-glossary');
+});
+Route::get('/cme-group-education', function () {
+    return view('knowledge.cme-group-education');
+});

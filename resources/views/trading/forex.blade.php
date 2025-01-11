@@ -17,26 +17,43 @@
         <!-- page-title end -->
 
 
+
         <section class="account-style-three pt_100 pb_70">
             <div class="auto-container">
                 <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12 col-sm-12 content-column pb_70">
+                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                         <div class="content_block_eight">
                             <div class="content-box ml_60">
                                 <div class="sec-title pb_20">
-                                    <h2>Trade major, minor, and exotic currency pairs with leverage up to <span>1:500</span></h2>
-                                    <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
+                                <h2>Trade major, minor, and exotic currency pairs with leverage up to <span>1:300</span></h2>
                                 </div>
-                                <a href="#" class="theme-btn btn-one">Get Started</a>
+                                <div class="text-box">
+                                 <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
+                        <div class="inner-content">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 account-block">
+                                    <div class="account-block-one pb_1 wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <figure class="image-box">
+                                                <img src="{{ asset('')}}assets/img/6.png" alt="meta5" style="width:640px !important;max-width: none;">
+                                    </figure>
+                                    </div>
+                                    
+                                </div>
                                 
                             </div>
                         </div>
-                </div> 
-                <hr>
+                    </div>
+                    
                 </div>
             </div>
-          
         </section>
+
+
         <section class="account-style-three pt_100 pb_70">
             <div class="auto-container">
                 <div class="row align-items-center">

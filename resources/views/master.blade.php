@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from azim.hostlin.com/Fortradex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 04:20:53 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

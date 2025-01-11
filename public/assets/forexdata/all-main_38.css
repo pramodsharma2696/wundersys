@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.page div.block>div.content {
+    display: block !important;
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 25px 10px
+}
+
+.content.separator_h {
+    border-radius: 7px;
+    padding: 0 !important
+}
+
+.separator_h h4 {
+    padding: 16px !important
+}
+
+.page div.breadcrumbs>div.content,
+.page div.nobreadcrumbs>div.content {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    padding: 20px 25px
+}
+
+.page div.breadcrumbs img,
+.page div.nobreadcrumbs img,
+.page i.menu-icon.beginners-about {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.page div.breadcrumbs .noh1,
+.page div.breadcrumbs h1,
+.page div.nobreadcrumbs .noh1,
+.page div.nobreadcrumbs h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.9;
+    padding: 7px 10px 0
+}
+
+.page div.breadcrumbs a,
+.page div.nobreadcrumbs a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px
+}
+
+.awardsmain_block {
+    background: url(/i/img/awards/awardslist.png) no-repeat;
+    margin: 0 auto
+}
+
+.awardsmain_5,
+.awardsmain_7 {
+    width: 40px;
+    height: 40px;
+    background-position: -384px -5px
+}
+
+.awardsmain_5 {
+    background-position: -334px -5px
+}
+
+.awardsmain_6 {
+    width: 40px;
+    height: 38px;
+    background-position: -284px -5px
+}
+
+.awardsmain_2 {
+    width: 74px;
+    height: 38px;
+    background-position: -46px -5px
+}
+
+.awardsmain_3 {
+    width: 50px;
+    height: 38px;
+    background-position: -130px -5px
+}
+
+.awardsmain_4 {
+    width: 34px;
+    height: 38px;
+    background-position: -190px -5px
+}
+
+.page div.banner>div.content {
+    justify-content: center;
+    display: flex !important;
+    padding: 25px 25px 0
+}
+
+.page div.banner>div.content img {
+    vertical-align: bottom
+}
+
+.page div.banner>div.content>div {
+    text-align: justify;
+    display: inline-block;
+    line-height: 1.5;
+    padding-bottom: 25px
+}
+
+.page div.banner>div.content>div:first-child {
+    min-width: 600px;
+    margin: 0 20px 0 0
+}
+
+.page div.banner h1,
+.page div.banner h3 {
+    padding-bottom: 10px;
+    color: #000;
+    text-align: left;
+    font-size: 1.6em;
+    text-transform: none
+}
+
+.page div.banner p {
+    color: #666
+}
+
+.page div.sections {
+    /* border-top: 1px solid #ccc; */
+    background: linear-gradient(to bottom, #f9f9f9 0%, #fff 70%)
+}
+
+.page div.sections div.section {
+    display: inline-table;
+    margin: 10px 1.5% !important;
+    width: 47%;
+    text-align: justify;
+    line-height: 1.5
+}
+
+.page div.sections>div.content {
+    text-align: justify
+}
+
+.page div.sections>div.content h4 {
+    font-size: 1.4em;
+    line-height: 1.5
+}
+
+.page div.sections>div.content h5 {
+    font-size: 1.8em;
+    padding-top: 15px;
+    text-transform: uppercase;
+    display: block !important;
+    width: auto !important
+}
+
+.page p>a {
+    color: #000
+}
+
+.page p>a:hover,
+div.page .banner p>a:hover {
+    color: red
+}
+
+
