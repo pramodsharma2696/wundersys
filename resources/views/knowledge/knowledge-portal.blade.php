@@ -173,7 +173,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">What is margin?</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">What is a CFD?</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">How to start CFD trading?</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Lots & Leverage</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Price changing. Pips and Points</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Chart Types</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">How to Trade on Fx Markets?</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Trading Sessions</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/basics-trading') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60"> What is fundamental analysis? </h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/fundamental-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60"> Leading and lagging economic indicators </h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/fundamental-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +271,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Major economic indicators. Part 1</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/fundamental-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Major economic indicators. Part 2</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/fundamental-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +306,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60"> Trend Lines </h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/technical-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Support and resistance levels</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/technical-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">What are channels and how to put them on</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/technical-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Major patterns</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/technical-analysis') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -358,7 +358,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60"> Escalation of Commitment and the Sunk Cost Fallacy </h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/psychology') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60"> Blindfolded on a Mountain Range </h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/psychology') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +374,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Novice traders mistakes</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/psychology') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title pt_30 pb_60">Trading: from competency to skill</h5>
-                            <a href="#" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
+                            <a href="{{ url('/psychology') }}" class="btn btn-link">Start <i class="bi bi-arrow-right"></i> </a>
                         </div>
                     </div>
                 </div>

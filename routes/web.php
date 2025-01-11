@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -98,3 +99,11 @@ Route::get('/forex-glossary', function () {
 Route::get('/cme-group-education', function () {
     return view('knowledge.cme-group-education');
 });
+
+
+// Basics of trading
+
+Route::get('/basics-trading',[HomeController::class,'BasicTrading']);
+Route::get('/fundamental-analysis',[HomeController::class,'FundamentalAnalysis']);
+Route::get('/technical-analysis',[HomeController::class,'TechnicalAnalysis']);
+Route::get('/psychology',[HomeController::class,'Psychology']);
