@@ -70,7 +70,7 @@
     object-fit: cover;
 }
 .account-block-one .inner-box{
-    height: 620px !important;
+    height: 580px !important;
 /* background: #48b2da !important; */
 }
 </style>
@@ -148,7 +148,7 @@
 <!-- account-section -->
 <section class="account-section pt_100 pb_100">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-    <div class="auto-container" style="max-width: 1600px !important;">
+    <div class="auto-container" style="max-width: 1774px !important;">
         <div class="sec-title pb_60 centred">
             <span class="sub-title mb_14">Accounts</span>
             <h2>Wundersys Capital Limited Trading Accounts</h2>
@@ -189,8 +189,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                            30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
                                         
                                     </tbody>
@@ -242,8 +241,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                            30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
                                         
                                     </tbody>
@@ -295,8 +293,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                            30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
                                         
                                     </tbody>
@@ -353,8 +350,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                            30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
                                         
                                     </tbody>

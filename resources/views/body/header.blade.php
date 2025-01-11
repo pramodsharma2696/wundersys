@@ -90,6 +90,7 @@
                                         <li><a href="{{ url('/profit-calculator') }}">Profit Calculator</a></li>
                                         <li><a href="{{ url('/margin-calculator') }}" style="letter-spacing: 0px;">Margin Calculator</a></li>
                                         <li><a href="{{ url('/pip-calculator') }}"> Pip Calculator</a></li>
+                                        <li><a href="{{ url('/economic-calendar') }}" style="letter-spacing: 0px;">Economic Calendar</a></li>
                                         
                                     </ul>
                                 </li> 

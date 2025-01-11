@@ -82,6 +82,9 @@ Route::get('/margin-calculator', function () {
 Route::get('/pip-calculator', function () {
     return view('tools.pip-calculator');
 });
+Route::get('/economic-calendar', function () {
+    return view('tools.economic-calendar');
+});
 
 // knowledge-portal
 

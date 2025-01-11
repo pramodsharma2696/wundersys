@@ -23,7 +23,7 @@
 
 <section class="account-section pt_100 pb_100">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-    <div class="auto-container" style="max-width: 1600px !important;">
+    <div class="auto-container" style="max-width: 1774px !important;">
         <div class="sec-title pb_60 centred">
             <span class="sub-title mb_14">Accounts</span>
             <h2>Account Types</h2>
@@ -311,7 +311,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;margin-left: 50%;">Open an Account</a>
+            <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;margin-left: 50%;margin-right: 50%;">Open an Account</a>
 
         </div>
     </div>
