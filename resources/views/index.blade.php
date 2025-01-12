@@ -514,7 +514,7 @@ table.table.table-striped {
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-4.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Currency Trading</a></h3>
-                    <p>One of the primary methods of Silver trading is through the spot</p>
+                    <p>One of the primary methods of Currency trading is through the spot</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
@@ -522,7 +522,7 @@ table.table.table-striped {
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-5.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Silver Trading</a></h3>
-                    <p>One of the primary methods of gold trading is through the spot</p>
+                    <p>One of the primary methods of Silver trading is through the spot.</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
