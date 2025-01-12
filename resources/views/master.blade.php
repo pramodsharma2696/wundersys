@@ -41,6 +41,7 @@
 <link href="{{ asset('') }}assets/css/module-css/team.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/cta.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/faq.css" rel="stylesheet">
+<link href="{{ asset('') }}assets/css/module-css/blog-details.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/contact.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/page-title.css" rel="stylesheet">
 <link href="{{ asset('') }}assets/css/module-css/subscribe.css" rel="stylesheet">

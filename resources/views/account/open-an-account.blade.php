@@ -2,8 +2,12 @@
 @section('contents')
 <style>
     .account-block-one .inner-box {
-        height: 600px !important;
+        height: 545px !important;
     }
+    table.table.table-striped {
+    margin-top: -20px;
+    width: 310px;
+}
 </style>
 <!-- page-title -->
 <section class="page-title centred pt_90 pb_0">
@@ -40,7 +44,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $100</td>
+                                            <td>Min $100</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -48,11 +52,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 2 pips</td>
+                                            <td>2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -96,7 +100,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $500</td>
+                                            <td>Min $500</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -104,11 +108,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 1 pips</td>
+                                            <td>1 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -152,7 +156,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $5000</td>
+                                            <td>Min $5000</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -160,11 +164,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 0.2 pips</td>
+                                            <td>0.2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -209,7 +213,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $25000</td>
+                                            <td>Min $25000</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -217,20 +221,17 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 0.2 pips</td>
+                                            <td>0.2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
                                             <td>Free</td>
                                         </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
+                                       
                                         <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>

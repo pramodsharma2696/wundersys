@@ -31,43 +31,33 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">20TH April, 2024</span>
-                                <h3><a href="blog-details.html">USD/JPY Stages the more upsides can Bulls Aim for 160x Bonus?</a></h3>
+                                <!-- <span class="post-date">20TH April, 2024</span> -->
+                                <h3><a href="{{ url('/news-details') }}">USD/JPY Stages the more upsides can Bulls Aim for 160x Bonus?</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
+                                <div class="link"><a href="{{ url('/news-details') }}">Read More</a></div>
                             </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="{{ asset('') }}assets/images/resource/testimonial-1.png" alt=""></figure>
-                                <span>Daniel Marcon</span>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">19TH April, 2024</span>
-                                <h3><a href="blog-details.html">Nemo's Eurovision win fires up Swiss advocates for non-binary rights</a></h3>
+                                <h3><a href="{{ url('/news-details') }}">Nemo's Eurovision win fires up Swiss advocates for non-binary rights</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
+                                <div class="link"><a href="{{ url('/news-details') }}">Read More</a></div>
                             </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="{{ asset('') }}assets/images/resource/testimonial-2.png" alt=""></figure>
-                                <span>Robert Henry</span>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">18TH April, 2024</span>
-                                <h3><a href="blog-details.html">Wall St Week Ahead-Earnings bolster US stocks but crucial inflation report looms</a></h3>
+                               
+                                <h3><a href="{{ url('/news-details') }}">Wall St Week Ahead-Earnings bolster US stocks but crucial inflation report looms</a></h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
+                                <div class="link"><a href="{{ url('/news-details') }}">Read More</a></div>
                             </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="{{ asset('') }}assets/images/resource/testimonial-3.png" alt=""></figure>
-                                <span>Victor Classic</span>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

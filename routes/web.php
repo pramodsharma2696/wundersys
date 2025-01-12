@@ -32,6 +32,9 @@ Route::get('/contact-us', function () {
 Route::get('/news', function () {
     return view('company.news');
 });
+Route::get('/news-details', function () {
+    return view('company.news-details');
+});
 Route::get('/security-funds', function () {
     return view('company.security-funds');
 });

@@ -70,8 +70,12 @@
     object-fit: cover;
 }
 .account-block-one .inner-box{
-    height: 580px !important;
+    height: 545px !important;
 /* background: #48b2da !important; */
+}
+table.table.table-striped {
+    margin-top: -20px;
+    width: 310px;
 }
 </style>
 
@@ -165,7 +169,7 @@
                                     <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $100</td>
+                                            <td>Min $100</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -173,11 +177,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 2 pips</td>
+                                            <td>2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -192,7 +196,7 @@
                                             <td>No commission</td>
                                         </tr>
                                         <tr>
-                                            <th>Margin Call & Stop out</th>
+                                            <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
                                         
@@ -221,7 +225,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $500</td>
+                                            <td>Min $500</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -229,11 +233,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 1 pips</td>
+                                            <td>1 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -248,7 +252,7 @@
                                             <td>No commission</td>
                                         </tr>
                                         <tr>
-                                            <th>Margin Call & Stop out</th>
+                                            <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
                                         
@@ -277,7 +281,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $5000</td>
+                                            <td>Min $5000</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -285,11 +289,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 0.2 pips</td>
+                                            <td>0.2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -304,7 +308,7 @@
                                             <td>7$ per lot</td>
                                         </tr>
                                         <tr>
-                                            <th>Margin Call & Stop out</th>
+                                            <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
                                         
@@ -334,7 +338,7 @@
                                 <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
-                                            <td>Minimum $25000</td>
+                                            <td>Min $25000</td>
                                         </tr>
                                         <tr>
                                             <th>Leverage</th>
@@ -342,11 +346,11 @@
                                         </tr>
                                         <tr>
                                             <th>Lot Size</th>
-                                            <td>Trade Size of 0.01 Lot</td>
+                                            <td>0.01 Lot</td>
                                         </tr>
                                         <tr>
                                             <th>Spread</th>
-                                            <td>Start from 0.2 pips</td>
+                                            <td>0.2 pips</td>
                                         </tr>
                                         <tr>
                                             <th>Swap</th>
@@ -361,7 +365,7 @@
                                             <td>No</td>
                                         </tr>
                                         <tr>
-                                            <th>Margin Call & Stop out</th>
+                                            <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
                                         
@@ -486,7 +490,7 @@
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-1.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Crypto Trading</a></h3>
-                    <p>One of the primary methods of gold trading is through the spot</p>
+                    <p>One of the primary methods of Crypto trading is through the spot.</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
@@ -494,7 +498,7 @@
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-2.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Shares Trading</a></h3>
-                    <p>One of the primary methods of gold trading is through the spot</p>
+                    <p>One of the primary methods of Shares trading is through the spot.</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
@@ -502,7 +506,7 @@
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-3.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Gold Trading</a></h3>
-                    <p>One of the primary methods of gold trading is through the spot</p>
+                    <p>One of the primary methods of Gold trading is through the spot.</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
@@ -510,7 +514,7 @@
                 <div class="inner-box">
                     <figure class="image-box"><img src="{{ asset('') }}assets/images/resource/trading-4.png" alt=""></figure>
                     <h3><a href="https://my.wundersyscapital.com/en/auth/sign-up">Currency Trading</a></h3>
-                    <p>One of the primary methods of gold trading is through the spot</p>
+                    <p>One of the primary methods of Silver trading is through the spot</p>
                     <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Start Trading Now</a></div>
                 </div>
             </div>
