@@ -1,5 +1,7 @@
 @extends('master')
 @section('contents')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .margin-calculator_remove {
         cursor: pointer;
@@ -68,6 +70,13 @@
     .nice-select .list {
         min-width: 100%;
     }
+
+    /* calcs */
+    @media (max-width: 767px) {
+        .margin-calculator_table {
+            display: none;
+        }
+    }
 </style>
 <!-- page-title -->
 <section class="page-title centred pt_90 pb_0">
@@ -87,60 +96,100 @@
 <section class="account-style-three pt_100 pb_70">
     <div class="auto-container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 content-column pb_70">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column pb-70">
                 <div class="content_block_eight">
-
                     <div class="container py-5">
                         <h2 class="text-center mb-5">Margin Calculator</h2>
 
+                        <!-- Account Currency and Group Selectors -->
                         <div class="row mb-3">
-                            <div class="col-md-4">
+                            <!-- Account Currency -->
+                            <div class="col-md-3">
                                 <label for="currency-selector" class="form-label">Account Currency</label>
                                 <select id="currency-selector" class="form-select">
                                     <option value="USD" selected>USD</option>
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
+                                </select>
+                            </div>
+
+                            <!-- FX Majors -->
+                            <div class="col-md-3">
+                                <label for="major-group-selector" class="form-label">FX Majors</label>
+                                <select id="fx-majors-group-selector" class="form-select searchable-select">
+                                    <option value="" selected>-- Select FX Majors --</option>
+                                </select>
+                            </div>
+
+                            <!-- FX Minors -->
+                            <div class="col-md-2">
+                                <label for="minors-group-selector" class="form-label">FX Minors</label>
+                                <select id="fx-minors-group-selector" class="form-select searchable-select">
+                                    <option value="" selected>-- Select FX Minors --</option>
+                                </select>
+                            </div>
+
+                            <!-- FX Exotics -->
+                            <div class="col-md-2">
+                                <label for="exotics-group-selector" class="form-label">FX Exotics</label>
+                                <select id="fx-exotics-group-selector" class="form-select searchable-select">
+                                    <option value="" selected>-- Select FX Exotics --</option>
+                                </select>
+                            </div>
+
+                            <!-- Spot Metals -->
+                            <div class="col-md-2">
+                                <label for="spot-group-selector" class="form-label">Spot Metals</label>
+                                <select id="spot-metals-group-selector" class="form-select searchable-select">
+                                    <option value="" selected>-- Select Spot Metals --</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row mb-4">
-                            <div class="col-md-4">
-                                <label for="group-selector" class="form-label">Groups</label>
-                                <select id="group-selector" class="form-select">
-                                    <option value="FX Majors" selected>FX Majors</option>
-                                    <option value="FX Minors">FX Minors</option>
-                                    <option value="FX Exotics">FX Exotics</option>
-                                    <option value="Spot Metals">Spot Metals</option>
-                                </select>
-                            </div>
-                        </div>
-
+                        <!-- Instrument List -->
                         <div id="instrument-list" class="mb-4">
                             <div class="instrument-btn-container">
                                 <!-- Dynamic instruments will appear here -->
                             </div>
+                            <div class="margin-calculator_table">
+                                <!-- Default header row -->
+                                <div class="row mb-2">
+                                    <div class="col-md-4"><strong>Instrument</strong></div>
+                                    <div class="col-md-2"><strong>Rate</strong></div>
+                                    <div class="col-md-1"><strong>Size</strong></div>
+                                    <div class="col-md-2"><strong>Value</strong></div>
+                                    <div class="col-md-2"><strong>Margin</strong></div>
+                                    <div class="col-md-1 text-center"></div>
+                                </div>
+                            </div>
+                            <div class="margin-calculator_table_mobile d-md-none">
+
+                            </div>
+
+
                         </div>
 
+                        <!-- Total Margin -->
                         <div class="row mt-3">
                             <div class="col-12 text-end">
-                                <h5 style="margin-bottom: 50px;">Total: <span id="total-margin" class="text-primary">$0</span></h5>
+                                <h5 style="margin-bottom: 50px;">
+                                    Total: <span id="total-margin" class="text-primary">$0.00</span>
+                                </h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 @push('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    $(document).ready(function() {
         const data = {
-            "FX Majors": [{
+            "Fx Majors": [{
                     instrument: "AUDUSD",
                     rate: 0.61959
                 },
@@ -169,7 +218,7 @@
                     rate: 157.823
                 }
             ],
-            "FX Minors": [{
+            "Fx Minors": [{
                     instrument: "AUDCAD",
                     rate: 0.8723
                 },
@@ -186,45 +235,81 @@
                     rate: 1.0602
                 },
                 {
-                    instrument: "CADCHF",
+                    instrument: "AUDUSD",
                     rate: 0.7430
                 },
                 {
-                    instrument: "CADJPY",
+                    instrument: "CADCHF",
                     rate: 87.492
+                },
+                {
+                    instrument: "CADJPY",
+                    rate: 173.171
+                },
+                {
+                    instrument: "EURNOK",
+                    rate: 173.171
+                },
+                {
+                    instrument: "EURNZD",
+                    rate: 173.171
+                },
+                {
+                    instrument: "GBPAUD",
+                    rate: 173.171
+                },
+                {
+                    instrument: "GBPCAD",
+                    rate: 173.171
+                },
+                {
+                    instrument: "GBPCHF",
+                    rate: 173.171
+                },
+                {
+                    instrument: "GBPNZD",
+                    rate: 173.171
+                },
+                {
+                    instrument: "NZDCAD",
+                    rate: 173.171
+                },
+                {
+                    instrument: "NZDCHF",
+                    rate: 173.171
+                },
+                {
+                    instrument: "NZDJPY",
+                    rate: 173.171
+                },
+                {
+                    instrument: "USDMXN",
+                    rate: 173.171
+                },
+                {
+                    instrument: "USDZAR",
+                    rate: 173.171
                 },
                 {
                     instrument: "CHFJPY",
                     rate: 173.171
                 }
             ],
-            "FX Exotics": [{
-                    instrument: "USDTHB",
-                    rate: 35.062
+            "Fx Exotics": [{
+                    instrument: "EURSEK",
+                    rate: 11.476
+                },
+                {
+                    instrument: "USDCNH",
+                    rate: 11.285
                 },
                 {
                     instrument: "EURNOK",
                     rate: 11.285
                 },
                 {
-                    instrument: "EURSEK",
-                    rate: 11.476
-                },
-                {
-                    instrument: "EURSGD",
+                    instrument: "USDSEK",
                     rate: 1.4425
-                },
-                {
-                    instrument: "EURTRY",
-                    rate: 26.768
-                },
-                {
-                    instrument: "GBPSGD",
-                    rate: 1.8241
-                },
-                {
-                    instrument: "NZDSGD",
-                    rate: 0.8763
                 }
             ],
             "Spot Metals": [{
@@ -242,156 +327,180 @@
             ]
         };
 
-        const instrumentListContainer = document.querySelector('.instrument-btn-container');
-        const totalMargin = document.getElementById('total-margin');
-        const groupSelector = document.getElementById('group-selector');
-        let instrumentsInTable = []; // Track instruments added to the table
+        const totalMargin = $("#total-margin");
+        const tableContainer = $(".margin-calculator_table");
+        const tableContainer2 = $(".margin-calculator_table_mobile");
+        let instrumentsInTable = [];
 
-        // Function to update the total margin
-        function updateTotalMargin() {
-            let total = 0;
-            const marginCells = document.querySelectorAll('.margin-cell');
-            marginCells.forEach(cell => {
-                const margin = parseFloat(cell.textContent.replace('$', ''));
-                if (!isNaN(margin)) {
-                    total += margin;
+        // Function to initialize Select2 for all select elements
+        function initializeSelect2() {
+            console.log("Initializing Select2...");
+            $("select").select2({
+                placeholder: "Select an option",
+                allowClear: true,
+                width: "100%"
+            }).on('select2:select', function() {
+                console.log("Dropdown selected:", $(this).val());
+
+                // Extract and format the group name
+                const group = toTitleCase($(this).attr("id").replace("-group-selector", "").replace("-", " ")).trim();
+
+                // Log the group name and data
+                console.log("Group derived:", group);
+                console.log("data[group] =", data[group]);
+
+                // Find instrument data
+                const instrumentData = data[group]?.find(item => item.instrument === $(this).val());
+                console.log("Selected instrument:", $(this).val(), "==", instrumentData);
+
+                // Add instrument to table if found
+                if (instrumentData) {
+                    console.log("Instrument selected:", instrumentData.instrument);
+                    addInstrumentToTable(instrumentData.instrument, instrumentData.rate);
+                } else {
+                    console.log("No instrument data found for group:", group);
                 }
             });
-            totalMargin.textContent = `$${total.toFixed(2)}`;
         }
 
-        // Populate instrument list dynamically based on selected group
-        function populateInstrumentList(group) {
-            instrumentListContainer.innerHTML = ''; // Clear existing instruments
-            const instruments = data[group];
 
-            instruments.forEach(item => {
-                const instrumentButton = document.createElement('button');
-                instrumentButton.classList.add('btn', 'btn-outline-primary', 'instrument-btn');
-                instrumentButton.textContent = item.instrument;
-                instrumentButton.setAttribute('data-instrument', item.instrument);
-                instrumentButton.setAttribute('data-rate', item.rate);
-
-                const plusIcon = document.createElement('i');
-                plusIcon.classList.add('bi', 'bi-plus-circle');
-                instrumentButton.appendChild(plusIcon);
-
-                instrumentListContainer.appendChild(instrumentButton);
+        // Function to convert a string to title case
+        function toTitleCase(str) {
+            return str.replace(/\b\w/g, function(char) {
+                return char.toUpperCase();
             });
         }
 
-        // Add instrument row to the table dynamically
-        function addInstrumentToTable(instrument, rate) {
-            const tableWrapper = document.createElement('div');
-            tableWrapper.classList.add('margin-calculator_table');
+        // Function to dynamically populate data into select tags
+        // Function to dynamically populate data into select tags
+        function populateSelectTags() {
+            console.log("Populating Select Tags...");
 
-            // Check if the header has already been added, if not, add it
-            if (!document.querySelector('.margin-calculator_table .table-header')) {
-                const headerRow = document.createElement('div');
-                headerRow.classList.add('row', 'mb-3', 'table-header');
-                headerRow.innerHTML = `
-      <div class="col-md-4"><strong>Instrument</strong></div>
-      <div class="col-md-2"><strong>Rate</strong></div>
-      <div class="col-md-2"><strong>Size</strong></div>
-      <div class="col-md-2"><strong>Value</strong></div>
-      <div class="col-md-2"><strong>Margin</strong></div>
-    `;
-                tableWrapper.appendChild(headerRow);
+            Object.keys(data).forEach(group => {
+                // Format the group name to match the HTML element IDs
+                const dropdownId = `${group.replace(" ", "-").toLowerCase()}-group-selector`;
+                const dropdown = $(`#${dropdownId}`);
+
+                dropdown.empty(); // Clear existing options
+                dropdown.append(new Option(`-- Select ${group} --`, "")); // Placeholder
+
+                // Check if the group exists in the data and populate the dropdown
+                if (data[group]) {
+                    data[group].forEach(item => {
+                        dropdown.append(new Option(item.instrument, item.instrument));
+                    });
+                }
+            });
+        }
+
+
+        // Function to add selected instrument to the table
+        function addInstrumentToTable(instrument, rate) {
+            console.log("Adding instrument to table:", instrument);
+
+            // Check if the instrument is already in the table
+            if (instrumentsInTable.includes(instrument)) {
+                console.log("Instrument already in table:", instrument);
+                alert("This instrument is already added.");
+                return;
             }
 
-            // Define the structure of the table row for the instrument
-            const row = document.createElement('div');
-            row.classList.add('row');
+            const row = $(`
+                <div class="row mb-2">
+                    <div class="col-md-4"><strong>${instrument}</strong></div>
+                    <div class="col-md-2">${rate}</div>
+                    <div class="col-md-1">
+                        <input type="number" class="form-control size-input" min="0.1" step="0.01" value="1" data-rate="${rate}">
+                    </div>
+                    <div class="col-md-2 value-cell">$${(rate * 100000).toFixed(2)}</div>
+                    <div class="col-md-2 margin-cell">$${((rate * 100000) * 0.06).toFixed(2)}</div>
+                    <div class="col-md-1 text-center">
+                    <button class="btn btn-danger btn-sm remove-btn">
+                        <i class="fa fa-remove"></i>
+                    </button>
+                </div>
+                </div>
+            `);
+            const row2 = $(`
+                    <div class="row mb-2 d-md-none">
+                        <div class="col-12"><strong>Instrument:</strong> ${instrument}</div>
+                        <div class="col-12"><strong>Rate:</strong> ${rate}</div>
+                        <div class="col-12"><strong>Size:</strong> <input type="number" class="form-control size-input" min="0.1" step="0.01" value="1" data-rate="${rate}"></div>
+                        <div class="col-12"><strong>Value:</strong> $${(rate * 100000).toFixed(2)}</div>
+                        <div class="col-12"><strong>Margin:</strong> $${((rate * 100000) * 0.06).toFixed(2)}</div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-danger btn-sm remove-btn">
+                                <i class="fa fa-remove"></i>
+                            </button>
+                        </div>
+                    </div>
+                `);
 
-            row.innerHTML = `
-    <div class="col-md-4">
-      <button type="button" class="btn btn-danger btn-sm margin-calculator_remove">X</button>
-      <span>${instrument}</span>
-    </div>
-    <div class="col-md-2">
-      <span>${rate}</span>
-    </div>
-    <div class="col-md-2">
-      <input type="number" class="form-control size-input" min="0.1" step="0.01" value="1" data-rate="${rate}">
-    </div>
-    <div class="col-md-2 value-cell">
-      $${(rate * 100000).toFixed(2)}
-    </div>
-    <div class="col-md-2 margin-cell">
-      $${((rate * 100000) * 0.06).toFixed(2)}
-    </div>
-  `;
+            // Append the row to the correct container (tableContainer)
+            tableContainer.append(row);
+            tableContainer2.append(row2);
+            instrumentsInTable.push(instrument);
 
-            // Append the row to the table (which is inside the container)
-            tableWrapper.appendChild(row);
-            document.querySelector('.container').appendChild(tableWrapper);
-
-            instrumentsInTable.push({
-                instrument: instrument,
-                rate: rate,
-                rowElement: row
-            });
-
-            const removeButton = row.querySelector('.margin-calculator_remove');
-            removeButton.addEventListener('click', () => {
-                // Remove the row from the table and the list of instruments
-                tableWrapper.remove();
-                instrumentsInTable = instrumentsInTable.filter(item => item.rowElement !== row);
-
-                // Recalculate the margin after removal
-                updateTotalMargin();
-            });
-
-            const sizeInput = row.querySelector('.size-input');
-            sizeInput.addEventListener('input', () => {
-                const size = parseFloat(sizeInput.value) || 1;
+            // Handle size input changes
+            row.find(".size-input").on("input", function() {
+                const size = parseFloat($(this).val()) || 1;
                 const value = rate * size * 100000;
                 const margin = value * 0.06;
 
-                row.querySelector('.value-cell').textContent = `$${value.toFixed(2)}`;
-                row.querySelector('.margin-cell').textContent = `$${margin.toFixed(2)}`;
+                console.log("Size input changed. Value:", value, "Margin:", margin);
 
+                row.find(".value-cell").text(`$${value.toFixed(2)}`);
+                row.find(".margin-cell").text(`$${margin.toFixed(2)}`);
+                updateTotalMargin();
+            });
+            row2.find(".size-input").on("input", function() {
+                const size = parseFloat($(this).val()) || 1;
+                const value = rate * size * 100000;
+                const margin = value * 0.06;
+
+                console.log("Size input changed. Value:", value, "Margin:", margin);
+
+                row2.find(".value-cell").text(`$${value.toFixed(2)}`);
+                row2.find(".margin-cell").text(`$${margin.toFixed(2)}`);
+                updateTotalMargin();
+            });
+
+            // Handle remove button click
+            row.find(".remove-btn").on("click", function() {
+                row.remove();
+                instrumentsInTable = instrumentsInTable.filter(item => item !== instrument);
+                updateTotalMargin();
+            });
+            row2.find(".remove-btn").on("click", function() {
+                row2.remove();
+                instrumentsInTable = instrumentsInTable.filter(item => item !== instrument);
                 updateTotalMargin();
             });
 
             updateTotalMargin();
         }
 
+        // Function to update total margin
+        function updateTotalMargin() {
+            let total = 0;
+            $(".margin-cell").each(function() {
+                const margin = parseFloat($(this).text().replace("$", ""));
+                if (!isNaN(margin)) total += margin;
+            });
+            console.log("Total Margin Updated: $", total.toFixed(2));
+            totalMargin.text(`$${total.toFixed(2)}`);
+        }
 
+        // Initialize dropdowns and attach change event handlers
+        function initialize() {
+            populateSelectTags();
+            initializeSelect2();
+        }
 
-        // Group selection change handler
-        groupSelector.addEventListener('change', (event) => {
-            populateInstrumentList(event.target.value);
-        });
-
-        // Instrument button click handler
-        instrumentListContainer.addEventListener('click', (event) => {
-            if (event.target.classList.contains('instrument-btn') || event.target.tagName.toLowerCase() === 'i') {
-                const instrument = event.target.closest('button').getAttribute('data-instrument');
-                const rate = parseFloat(event.target.closest('button').getAttribute('data-rate'));
-                const button = event.target.closest('button');
-
-                // Check if the instrument is already added to the table
-                const instrumentIndex = instrumentsInTable.findIndex(item => item.instrument === instrument);
-
-                if (instrumentIndex === -1) {
-                    // If not already added, add it
-                    addInstrumentToTable(instrument, rate);
-                    button.classList.add('active'); // Mark button as active
-                } else {
-                    // If already added, remove it
-                    instrumentsInTable[instrumentIndex].rowElement.remove();
-                    instrumentsInTable.splice(instrumentIndex, 1);
-                    button.classList.remove('active'); // Mark button as inactive
-                }
-
-                updateTotalMargin();
-            }
-        });
-
-        // Initial population of instrument list based on default group
-        populateInstrumentList(groupSelector.value);
+        // Run initialization
+        initialize();
     });
 </script>
+
 @endpush
 @endsection
