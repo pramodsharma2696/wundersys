@@ -180,7 +180,45 @@
             </div>
         </section>
 
-        <!-- team-section -->
+       
+
+
+        <!-- apps-style-two -->
+        <section class="apps-style-two pt_150 pb_150">
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+            <figure class="image-layer" style="right: 250px !important;"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_four">
+                            <div class="content-box ml_80">
+                                <div class="sec-title light pb_40">
+                                    <span class="sub-title mb_14">Download App</span>
+                                    <h2>Download Trading App</h2>
+                                    <p>We use cookines to understand how you use our website and to give you the best possible experience.</p>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=WundersysCapital-Live" class="apple-store">
+                                        <img src="{{ asset('') }}assets/images/icons/icon-7.png" alt="">
+                                        <span>Download on</span>
+                                        App Store
+                                    </a>
+                                    <a href="https://download.mql5.com/cdn/mobile/mt5/android?server=WundersysCapital-Live" class="play-store">
+                                        <img src="{{ asset('') }}assets/images/icons/icon-8.png" alt="">
+                                        <span>Get it on</span>
+                                        Google Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- apps-style-two end -->
+
+
+      
         <section class="account-style-three pt_100 pb_70">
             <div class="auto-container">
                 <div class="row align-items-center">
@@ -188,10 +226,10 @@
                         <div class="content_block_eight">
                             <div class="content-box ml_60">
                                 <div class="sec-title pb_20">
-                                    <h2>Ready to experience secure and reliable trading?</h2>
+                                    <h2>Open a Wundersys Capital Limited account in 3 simple steps.</h2>
                                     <p>Open an account with Wundersys Capital Limited today and benefit from our commitment to protecting your funds.</p>
                                 </div>
-                                <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Open an Account</a>
+                                
                                 
                             </div>
                         </div>
@@ -232,50 +270,11 @@
                             </div>
                         </div>
                     </div>
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;margin-left: 50%;margin-right: 50%;">Open an Account</a>
                     
                 </div>
             </div>
         </section>
-        <!-- team-section end -->
-
-
-        <!-- apps-style-two -->
-        <section class="apps-style-two pt_150 pb_150">
-            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-18.png);"></div>
-            <figure class="image-layer" style="right: 250px !important;"><img src="{{ asset('') }}assets/image/download.png" style="width: 385px;height: auto;" alt=""></figure>
-            <div class="auto-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_four">
-                            <div class="content-box ml_80">
-                                <div class="sec-title light pb_40">
-                                    <span class="sub-title mb_14">Download App</span>
-                                    <h2>Download Trading App</h2>
-                                    <p>We use cookines to understand how you use our website and to give you the best possible experience.</p>
-                                </div>
-                                <div class="btn-box">
-                                    <a href="https://download.mql5.com/cdn/mobile/mt5/ios?server=WundersysCapital-Live" class="apple-store">
-                                        <img src="{{ asset('') }}assets/images/icons/icon-7.png" alt="">
-                                        <span>Download on</span>
-                                        App Store
-                                    </a>
-                                    <a href="https://download.mql5.com/cdn/mobile/mt5/android?server=WundersysCapital-Live" class="play-store">
-                                        <img src="{{ asset('') }}assets/images/icons/icon-8.png" alt="">
-                                        <span>Get it on</span>
-                                        Google Play
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- apps-style-two end -->
-
-
-      
-
 
         
 

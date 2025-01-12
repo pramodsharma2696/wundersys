@@ -55,6 +55,10 @@
                                             <td>Start from 2 pips</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -64,8 +68,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                                30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
 
                                     </tbody>
@@ -108,6 +111,10 @@
                                             <td>Start from 1 pips</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -117,8 +124,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                                30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
 
                                     </tbody>
@@ -161,6 +167,10 @@
                                             <td>Start from 0.2 pips</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -170,8 +180,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                                30% Respectively</td>
+                                            <td>100% & 30% </td>
                                         </tr>
 
                                     </tbody>
@@ -219,6 +228,10 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -228,8 +241,7 @@
                                         </tr>
                                         <tr>
                                             <th>Margin Call & Stop out</th>
-                                            <td>Set at 100% &
-                                                30% Respectively</td>
+                                            <td>100% & 30%</td>
                                         </tr>
 
                                     </tbody>

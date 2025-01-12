@@ -81,7 +81,7 @@
                                         <li><a href="{{ url('knowledge-portal') }}#ta" style="letter-spacing: 0px;">Technical analysis</a></li>
                                         <li><a href="{{ url('knowledge-portal') }}#pshyco" style="letter-spacing: 0px;">Trader Psychology</a></li>
                                         <li><a href="{{ url('forex-glossary') }}" style="letter-spacing: 0px;">Traders Glossary</a></li>                                        
-                                        <li><a href="{{ url('cme-group-education') }}" style="letter-spacing: 0px;">CME Group Education</a></li>
+                                        <!-- <li><a href="{{ url('cme-group-education') }}" style="letter-spacing: 0px;">CME Group Education</a></li> -->
                                         <!-- <li><a href="{{ url('security-funds') }}">Articles</a></li> -->
                                     </ul>
                                 </li> 

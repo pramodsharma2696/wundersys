@@ -180,6 +180,10 @@
                                             <td>Start from 2 pips</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -232,6 +236,10 @@
                                             <td>Start from 1 pips</td>
                                         </tr>
                                         <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
+                                        </tr>
+                                        <tr>
                                             <th>Scalping & Hedging</th>
                                             <td>Permitted</td>
                                         </tr>
@@ -282,6 +290,10 @@
                                         <tr>
                                             <th>Spread</th>
                                             <td>Start from 0.2 pips</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Swap</th>
+                                            <td>Free</td>
                                         </tr>
                                         <tr>
                                             <th>Scalping & Hedging</th>
