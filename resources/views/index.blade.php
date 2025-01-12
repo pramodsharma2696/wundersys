@@ -93,7 +93,7 @@ table.table.table-striped {
                 <div class="content-box1 p_relative">
                     <div class="btn-box">
                         <a href="/login" class="theme-btn btn-one">Login</a>
-                        <a href="/register" class="theme-btn btn-two">Register</a>
+                        <a href="/register" class="theme-btn btn-one">Register</a>
                     </div>
                 </div>
             </div>
