@@ -325,34 +325,34 @@
 
 
 	// five-item-carousel
-	if ($('.five-item-carousel').length) {
-		$('.five-item-carousel').owlCarousel({
-			loop:true,
-			margin:30,
-			nav:true,
-			smartSpeed: 500,
-			autoplay: 1000,
-			navText: [ '<span class="icon-21"></span>', '<span class="icon-22"></span>' ],
-			responsive:{
-				0:{
-					items:1
-				},
-				480:{
-					items:2
-				},
-				600:{
-					items:3
-				},
-				800:{
-					items:4
-				},			
-				1200:{
-					items:5
-				}
+	// if ($('.five-item-carousel').length) {
+	// 	$('.five-item-carousel').owlCarousel({
+	// 		loop:true,
+	// 		margin:30,
+	// 		nav:true,
+	// 		smartSpeed: 500,
+	// 		autoplay: 1000,
+	// 		navText: [ '<span class="icon-21"></span>', '<span class="icon-22"></span>' ],
+	// 		responsive:{
+	// 			0:{
+	// 				items:1
+	// 			},
+	// 			480:{
+	// 				items:2
+	// 			},
+	// 			600:{
+	// 				items:3
+	// 			},
+	// 			800:{
+	// 				items:4
+	// 			},			
+	// 			1200:{
+	// 				items:5
+	// 			}
 
-			}
-		});    		
-	}
+	// 		}
+	// 	});    		
+	// }
 
 	//nice select
 	$(document).ready(function() {

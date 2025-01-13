@@ -77,7 +77,14 @@ table.table.table-striped {
     margin-top: -20px;
     width: 310px;
 }
-
+.trading-block-two .inner-box{
+    width: 150% !important;
+}
+@media (max-width: 768px) { 
+    .trading-block-two .inner-box {
+        width: 236% !important;
+    }
+}
 </style>
 
 <!-- banner-section -->
@@ -535,64 +542,29 @@ table.table.table-striped {
 
 <!-- trading-style-two -->
 <section class="trading-style-two centred pt_100 pb_90">
-    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-    <div class="auto-container">
-        <div class="sec-title light pb_60">
-            <span class="sub-title mb_14">Trade Now</span>
-            <h2>Market Spreads and Swaps</h2>
-        </div>
-        <div class="project-tab">
-            <div class="tab-btn-box mb_40">
-                <ul class="tab-btns product-tab-btns clearfix">
-                    <li class="p-tab-btn active-btn" data-tab="#tab-1">Forex</li>
-                    <li class="p-tab-btn" data-tab="#tab-2">Cryto CFDs</li>
-                    <li class="p-tab-btn" data-tab="#tab-3">Share CFDs</li>
-                    <li class="p-tab-btn" data-tab="#tab-4">Commondities</li>
-                    <li class="p-tab-btn" data-tab="#tab-5">Spot Metals</li>
-                    <li class="p-tab-btn" data-tab="#tab-6">Energies</li>
-                    <li class="p-tab-btn" data-tab="#tab-7">Indices</li>
-                </ul>
-            </div>
-            <div class="p-tabs-content">
-                <div class="p-tab active-tab" id="tab-1">
-                    <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                         
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-2">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                        
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-3">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                       
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-4">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                       
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-5">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                      
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-6">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                      
-                    </div>
-                </div>
-                <div class="p-tab" id="tab-7">
-                <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+  <div class="auto-container">
+    <div class="sec-title light pb_60">
+      <span class="sub-title mb_14">Trade Now</span>
+      <h2>Market Spreads and Swaps</h2>
     </div>
+    <div class="project-tab">
+      <div class="tab-btn-box mb_40">
+        <ul class="tab-btns product-tab-btns clearfix">
+          <li class="p-tab-btn active-btn" data-tab="#tab-1">Forex</li>
+        </ul>
+      </div>
+      <div class="p-tabs-content">
+        <div class="p-tab active-tab" id="tab-1">
+          <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
+            <!-- Forex trading blocks will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- trading-style-two end -->
 
 
@@ -709,139 +681,129 @@ table.table.table-striped {
 <!-- subscribe-section end -->
 @push('scripts')
 <script>
-    $(document).ready(function () {
-  const tabs = {
-    Forex: "tab-1",
-    "Cryto CFDs": "tab-2",
-    "Share CFDs": "tab-3",
-    Commodities: "tab-4",
-    "Spot Metals": "tab-5",
-    Energies: "tab-6",
-    Indices: "tab-7",
-  };
+  $(document).ready(function () {
+    const allowedSymbols = [
+      "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD",
+      "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNOK", "EURNZD", "EURSEK", "EURUSD", "GBPAUD",
+      "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD",
+      "USDCAD", "USDCHF", "USDCNH", "USDHKD", "USDJPY", "USDMXN", "USDNOK", "USDSEK", "USDZAR",
+    ];
 
-  let currentTab = "Forex";
+    // Handle tab switching
+    $(".p-tab-btn").on("click", function () {
+      const targetTab = $(this).data("tab");
+      $(".p-tab").removeClass("active-tab");
+      $(`#${targetTab}`).addClass("active-tab");
 
-  // Handle tab switching
-  $(".p-tab-btn").on("click", function () {
-    $(".p-tab-btn").removeClass("active-btn");
-    $(this).addClass("active-btn");
-    currentTab = $(this).text().trim(); // Use `.trim()` to avoid whitespace issues
-    $(".p-tab").removeClass("active-tab");
-    $("#" + tabs[currentTab]).addClass("active-tab");
-  });
+      // Reinitialize Owl Carousel for the active tab
+      $(`#${targetTab} .five-item-carousel`).owlCarousel({
+        loop:true,
+			margin:30,
+			nav:true,
+			smartSpeed: 500,
+			autoplay: 1000,
+			navText: [ '<span class="icon-21"></span>', '<span class="icon-22"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:2
+				},
+				600:{
+					items:3
+				},
+				800:{
+					items:4
+				},			
+				1200:{
+					items:4
+				}
 
-  // WebSocket Integration
-  const server = {
-    connect: function () {
-      const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
-      this._ws = new WebSocket(location);
-      this._ws.onopen = this._onopen;
-      this._ws.onmessage = this._onmessage.bind(this);
-      this._ws.onclose = this._onclose.bind(this);
-    },
-    _onopen: function () {
-      console.log("WebSocket connection established.");
-    },
-    _onmessage: function (event) {
-      try {
-        const content = JSON.parse(event.data);
-        // console.log(content);
-        
+			}
+      });
+    });
 
-        if (content.type === "PricesAndOrderBook") {
-          const symbol = content.symbol; // Symbol (e.g., SPA35cash)
-          const decimal = content.decimalPlaces; // Decimal places (e.g., 0)
-          const bestBid = content.bidPrice; // Best bid price
-          const bestAsk = content.askPrice; // Best ask price
-          const spread = bestAsk - bestBid; // Calculate spread
+    
 
-         
+    // WebSocket Integration
+    const server = {
+      connect: function () {
+        const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
+        this._ws = new WebSocket(location);
+        this._ws.onopen = this._onopen;
+        this._ws.onmessage = this._onmessage.bind(this);
+        this._ws.onclose = this._onclose.bind(this);
+      },
+      _onopen: function () {
+        console.log("WebSocket connection established.");
+      },
+      _onmessage: function (event) {
+        try {
+          const content = JSON.parse(event.data);
+          if (content.type === "PricesAndOrderBook") {
+            this.updateTradingBlock(content);
+          }
+        } catch (error) {
+          console.error("Error processing WebSocket message:", error);
+        }
+      },
+      _onclose: function () {
+        console.log("WebSocket connection closed. Reconnecting...");
+        setTimeout(() => this.connect(), 1000);
+      },
+      updateTradingBlock: function (content) {
+        const { symbol, decimalPlaces, bidPrice, askPrice } = content;
+        if (!allowedSymbols.includes(symbol)) return;
 
-          // Format values
-          const formattedAsk = (bestAsk / Math.pow(10, decimal)).toFixed(decimal);
-          const formattedBid = (bestBid / Math.pow(10, decimal)).toFixed(decimal);
-          const formattedSpread = (spread / Math.pow(10, decimal)).toFixed(decimal);
+        const spread = askPrice - bidPrice;
+        const formattedAsk = (askPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+        const formattedBid = (bidPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+        const formattedSpread = (spread / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
 
-          // Find the matching trading block
-          let blockFound = false;
-          $(".trading-block-two").each(function () {
-            const blockSymbol = $(this).find("h5").text().trim(); // Get symbol from block
+        let blockFound = false;
+        $(".trading-block-two").each(function () {
+          const blockSymbol = $(this).find("h5").text().trim();
+          if (blockSymbol === symbol) {
+            blockFound = true;
+            $(this).find(".text-list li:nth-child(1) span").text(formattedAsk);
+            $(this).find(".text-list li:nth-child(2) span").text(formattedBid);
+            $(this).find(".text-list li:nth-child(3) span").text(formattedSpread);
+          }
+        });
 
-            if (blockSymbol === symbol) {
-              blockFound = true;
-              const askElement = $(this).find(".text-list li:nth-child(1) span");
-              const bidElement = $(this).find(".text-list li:nth-child(2) span");
-              const spreadElement = $(this).find(".text-list li:nth-child(3) span");
-
-              // Update values
-              askElement.text(formattedAsk);
-              bidElement.text(formattedBid);
-              spreadElement.text(formattedSpread);
-            }
-          });
-
-          // If no matching block is found, append a new block (up to 4 blocks only)
-          if (!blockFound) {
-            const tabId = determineTabId(symbol);
-            if (tabId && tabs[tabId]) {
-              const carousel = $("#" + tabs[tabId]).find(".five-item-carousel");
-
-              // Check if the tab already has 4 blocks
-              if (carousel.find(".trading-block-two").length < 5) {
-                const newBlock = `
-                  <div class="owl-item">
-                    <div class="trading-block-two">
-                      <div class="inner-box">
-                        <h5>${symbol}</h5>
-                        <ul class="flag">
-                          <li><img src="{{ asset('') }}assets/images/icons/flag-1.png" alt=""></li>
-                          <li><img src="{{ asset('') }}assets/images/icons/flag-2.png" alt=""></li>
-                        </ul>
-                        <ul class="text-list clearfix">
-                          <li><h6>Ask</h6><span>${formattedAsk}</span></li>
-                          <li><h6>Bid</h6><span>${formattedBid}</span></li>
-                          <li><h6>Spread</h6><span>${formattedSpread}</span></li>
-                        </ul>
-                        <div class="btn-box"><a href="{{ asset('') }}account-details.html">Trade</a></div>
-                      </div>
-                    </div>
+        if (!blockFound) {
+          const carousel = $("#tab-1 .five-item-carousel");
+          if (carousel.find(".trading-block-two").length < 36) {
+            const newBlock = `
+              <div class="owl-item">
+                <div class="trading-block-two">
+                  <div class="inner-box">
+                    <h5>${symbol}</h5>
+                    <ul class="flag">
+                      <li><img src="{{ asset('') }}assets/images/icons/flag-1.png" alt=""></li>
+                      <li><img src="{{ asset('') }}assets/images/icons/flag-2.png" alt=""></li>
+                    </ul>
+                    <ul class="text-list clearfix">
+                      <li><h6>Ask</h6><span>${formattedAsk}</span></li>
+                      <li><h6>Bid</h6><span>${formattedBid}</span></li>
+                      <li><h6>Spread</h6><span>${formattedSpread}</span></li>
+                    </ul>
+                    <div class="btn-box"><a href="{{ asset('') }}account-details.html">Trade</a></div>
                   </div>
-                `;
-                
-                // Append new block and refresh carousel
-                carousel.find(".owl-stage").append(newBlock).trigger("refresh.owl.carousel");
-              }
-            }
+                </div>
+              </div>`;
+            carousel.trigger("add.owl.carousel", [$(newBlock)]).trigger("refresh.owl.carousel");
           }
         }
-      } catch (error) {
-        console.error("Error processing WebSocket message:", error);
-      }
-    },
-    _onclose: function () {
-      console.log("WebSocket connection closed. Reconnecting...");
-      setTimeout(() => this.connect(), 1000);
-    },
-  };
+      },
+    };
 
-  // Helper function to determine tab by symbol
-  function determineTabId(symbol) {
-    if (symbol.includes("USD") || symbol.includes("EUR")) return "Forex";
-    if (symbol.includes("BTC") || symbol.includes("ETH")) return "Cryto CFDs";
-    if (symbol.includes("AAPL") || symbol.includes("TSLA")) return "Share CFDs";
-    if (symbol.includes("GOLD") || symbol.includes("OIL")) return "Commodities";
-    if (symbol.includes("XAU") || symbol.includes("XAG")) return "Spot Metals";
-    if (symbol.includes("WTI") || symbol.includes("NGAS")) return "Energies";
-    if (symbol.includes("SPX") || symbol.includes("DOW")) return "Indices";
-    return null;
-  }
-
-  // Connect to WebSocket server
-  server.connect();
-});
-
+    server.connect();
+  });
 </script>
+
+
 @endpush
 
 @endsection
