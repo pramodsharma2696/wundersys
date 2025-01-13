@@ -77,9 +77,7 @@ table.table.table-striped {
     margin-top: -20px;
     width: 310px;
 }
-.owl-stage {
-    width: 1337px !important;
-}
+
 </style>
 
 <!-- banner-section -->
@@ -748,6 +746,8 @@ table.table.table-striped {
     _onmessage: function (event) {
       try {
         const content = JSON.parse(event.data);
+        // console.log(content);
+        
 
         if (content.type === "PricesAndOrderBook") {
           const symbol = content.symbol; // Symbol (e.g., SPA35cash)
@@ -756,9 +756,7 @@ table.table.table-striped {
           const bestAsk = content.askPrice; // Best ask price
           const spread = bestAsk - bestBid; // Calculate spread
 
-          console.log(
-            `symbol = ${symbol}, bestBid = ${bestBid}, bestAsk = ${bestAsk}, spread = ${spread}`
-          );
+         
 
           // Format values
           const formattedAsk = (bestAsk / Math.pow(10, decimal)).toFixed(decimal);
