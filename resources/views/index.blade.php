@@ -562,7 +562,7 @@
     <div class="container">
         <div class="sec-title text-center text-light mb-4">
             <span class="sub-title d-block mb-2">Trade Now</span>
-            <h2 style="color: #fff;">Forex Market Spreads and Swaps</h2>
+            <h2 style="color: #fff;">Forex Market Spreads</h2>
         </div>
         <div class="project-tab">
             <div class="p-tabs-content">
