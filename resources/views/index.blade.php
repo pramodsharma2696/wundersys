@@ -97,6 +97,12 @@
     /* .header-value {
     margin-left: 64px;
 } */
+
+    .page-link {
+        padding: 0px 12px;
+    }
+
+   
 </style>
 
 <!-- banner-section -->
