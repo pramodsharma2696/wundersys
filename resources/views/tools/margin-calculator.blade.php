@@ -193,9 +193,30 @@
                                 <div class="calc-dropdown-wrap">
                                     <p>Instrument</p>
                                     <select class="list-instruments form-select" id="instruments">
-                                        <option value="nzdusd">NZD/USD</option>
-                                        <option value="usdcad">USD/CAD</option>
-                                        <option value="usdjpy">USD/JPY</option>
+                                    <option value="eursek">EUR/SEK</option>
+                                    <option value="eurusd">EUR/USD</option>
+                                    <option value="gbpaud">GBP/AUD</option>
+                                    <option value="gbpcad">GBP/CAD</option>
+                                    <option value="gbpchf">GBP/CHF</option>
+                                    <option value="gbpjpy">GBP/JPY</option>
+                                    <option value="gbpnzd">GBP/NZD</option>
+                                    <option value="gbpusd">GBP/USD</option>
+                                    <option value="nzdcad">NZD/CAD</option>
+                                    <option value="nzdchf">NZD/CHF</option>
+                                    <option value="nzdjpy">NZD/JPY</option>
+                                    <option value="nzdusd">NZD/USD</option>
+                                    <option value="usdcad">USD/CAD</option>
+                                    <option value="usdchf">USD/CHF</option>
+                                    <option value="usdcnh">USD/CNH</option>
+                                    <option value="usdhkd">USD/HKD</option>
+                                    <option value="usdjpy">USD/JPY</option>
+                                    <option value="usdmxn">USD/MXN</option>
+                                    <option value="usdnok">USD/NOK</option>
+                                    <option value="usdsek">USD/SEK</option>
+                                    <option value="usdzar">USD/ZAR</option>
+                                    <option value="wtiusd">WTI/USD</option>
+                                    <option value="xagusd">XAG/USD</option>
+                                    <option value="xauusd">XAU/USD</option>
                                     </select>
                                 </div>
                             </div>
@@ -259,7 +280,7 @@
                             <div class="col-12 mt-4">
                                 <div class="value-tile text-center">
                                     <p>Required Margin</p>
-                                    <div class="value display-6">$34.33</div>
+                                    <div class="value display-6">$00.00</div>
                                 </div>
                             </div>
                         </div>
