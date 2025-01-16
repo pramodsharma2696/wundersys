@@ -231,6 +231,7 @@
     <script src="{{ asset('') }}assets/js/odometer.js"></script>
     <script src="{{ asset('') }}assets/js/jquery.lettering.min.js"></script>
     <script src="{{ asset('') }}assets/js/jquery.circleType.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- main-js -->
     @stack('scripts')
