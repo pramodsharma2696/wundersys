@@ -10,7 +10,7 @@
         object-fit: cover;
         z-index: -1;
     }
-    
+
     /* Content box styling */
     .content-box1 {
         position: relative;
@@ -30,61 +30,73 @@
         margin-top: 42%;
         transform: translateY(-50%);
     }
-.banner-section .content-box1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
-.banner-section .btn-box {
-    display: flex;
-    gap: 20px; /* Space between the buttons */
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-section .btn-one,
-.banner-section .btn-two {
-    display: inline-block;
-    padding: 12px 60px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #36a4cb; /* Adjust button color */
-    /* border-top: 4px solid #333; */
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.banner-section .btn-one:hover,
-.banner-section .btn-two:hover {
-    background-color: #0056b3; /* Adjust hover color */
-}
-
-.bg-layer video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.account-block-one .inner-box{
-    height: 545px !important;
-/* background: #48b2da !important; */
-}
-table.table.table-striped {
-    margin-top: -20px;
-    width: 310px;
-}
-.trading-block-two .inner-box{
-    width: 150% !important;
-}
-@media (max-width: 768px) { 
-    .trading-block-two .inner-box {
-        width: 236% !important;
+    .banner-section .content-box1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
-}
+
+    .banner-section .btn-box {
+        display: flex;
+        gap: 20px;
+        /* Space between the buttons */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-section .btn-one,
+    .banner-section .btn-two {
+        display: inline-block;
+        padding: 12px 60px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #36a4cb;
+        /* Adjust button color */
+        /* border-top: 4px solid #333; */
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .banner-section .btn-one:hover,
+    .banner-section .btn-two:hover {
+        background-color: #0056b3;
+        /* Adjust hover color */
+    }
+
+    .bg-layer video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .account-block-one .inner-box {
+        height: 545px !important;
+        /* background: #48b2da !important; */
+    }
+
+    table.table.table-striped {
+        margin-top: -20px;
+        width: 310px;
+    }
+
+    .trading-block-two .inner-box {
+        width: 150% !important;
+    }
+
+    @media (max-width: 768px) {
+        .trading-block-two .inner-box {
+            width: 236% !important;
+        }
+    }
+
+    /* .header-value {
+    margin-left: 64px;
+} */
 </style>
 
 <!-- banner-section -->
@@ -207,7 +219,7 @@ table.table.table-striped {
                                             <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     <tfoot>
                                         <tr>
@@ -230,7 +242,7 @@ table.table.table-striped {
                         <div class="content-box">
                             <ul class="list-item clearfix">
                                 <table class="table table-striped">
-                                <tbody>
+                                    <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
                                             <td>Min $500</td>
@@ -263,11 +275,11 @@ table.table.table-striped {
                                             <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <td colspan="2" class="text-center">
+                                            <td colspan="2" class="text-center">
                                                 <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
                                             </td>
                                         </tr>
@@ -286,7 +298,7 @@ table.table.table-striped {
                         <div class="content-box">
                             <ul class="list-item clearfix">
                                 <table class="table table-striped">
-                                <tbody>
+                                    <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
                                             <td>Min $5000</td>
@@ -319,11 +331,11 @@ table.table.table-striped {
                                             <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <td colspan="2" class="text-center">
+                                            <td colspan="2" class="text-center">
                                                 <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
                                             </td>
                                         </tr>
@@ -343,7 +355,7 @@ table.table.table-striped {
                         <div class="content-box">
                             <ul class="list-item clearfix">
                                 <table class="table table-striped">
-                                <tbody>
+                                    <tbody>
                                         <tr>
                                             <th>Initial Deposit</th>
                                             <td>Min $25000</td>
@@ -376,11 +388,11 @@ table.table.table-striped {
                                             <th>Margin Call,Stop out</th>
                                             <td>100% & 30%</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                        <td colspan="2" class="text-center">
+                                            <td colspan="2" class="text-center">
                                                 <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
                                             </td>
                                         </tr>
@@ -392,7 +404,7 @@ table.table.table-striped {
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     </div>
@@ -432,7 +444,7 @@ table.table.table-striped {
                                 <div class="acc-content">
                                     <div class="content">
                                         <p>Wundersys Capital Limited was founded with the vision of closing the gap between retail and institutional traders. We provide access to institutional-grade pricing and advanced trading tools, previously reserved for high-net-worth individuals and investment banks.</p>
-                                     </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="accordion block">
@@ -538,80 +550,95 @@ table.table.table-striped {
     </div>
 </section>
 <!-- trading-section end -->
-
-
-<!-- trading-style-two -->
-<section class="trading-style-two centred pt_100 pb_90">
-  <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-  <div class="auto-container">
-    <div class="sec-title light pb_60">
-      <span class="sub-title mb_14">Trade Now</span>
-      <h2>Market Spreads and Swaps</h2>
-    </div>
-    <div class="project-tab">
-      <div class="tab-btn-box mb_40">
-        <ul class="tab-btns product-tab-btns clearfix">
-          <li class="p-tab-btn active-btn" data-tab="#tab-1">Forex</li>
-        </ul>
-      </div>
-      <div class="p-tabs-content">
-        <div class="p-tab active-tab" id="tab-1">
-          <div class="five-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
-            <!-- Forex trading blocks will be dynamically added here -->
-          </div>
+<!-- trading-section end -->
+<section class="trading-style-two centred pt-5 pb-4">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+    <div class="container">
+        <div class="sec-title text-center text-light mb-4">
+            <span class="sub-title d-block mb-2">Trade Now</span>
+            <h2 style="color: #fff;">Forex Market Spreads and Swaps</h2>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- trading-style-two end -->
-
-
-<!-- process-section -->
-<section class="process-section pt_100 pb_70">
-            <div class="auto-container">
-                <div class="sec-title centred pb_60">
-                    <span class="sub-title mb_14">The Process</span>
-                    <h2>How It Works</h2>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content-box">
-                            <div class="process-block-one">
-                                <div class="inner-box">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                    <span class="count-text">1</span>
-                                    <h3>Sign up, It's Free!</h3>
-                                    <p>Our team will set up your account and help you build job to  easy-to-use web dashboard.</p>
-                                </div>
-                            </div>
-                            <div class="process-block-one">
-                                <div class="inner-box">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                    <span class="count-text">2</span>
-                                    <h3>Find best Deals and Invest</h3>
-                                    <p>Create and Trade anywhere from 1-100% openings with just a few clicks. customize your own.</p>
-                                </div>
-                            </div>
-                            <div class="process-block-one">
-                                <div class="inner-box">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-                                    <span class="count-text">3</span>
-                                    <h3>Get you profit back</h3>
-                                    <p>View market, reviews, and rosters before forex arrive on the site, and post reviews and pay, effortlessly.</p>
-                                </div>
-                            </div>
+        <div class="project-tab">
+            <div class="p-tabs-content">
+                <div class="p-tab active-tab" id="tab-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Instrument</th>
+                                        <th>Ask</th>
+                                        <th>Bid</th>
+                                        <th>Spread</th>
+                                        <th>Convert %</th>
+                                        <th>Graph</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="trading-table-body">
+                                    <!-- Trading rows will be dynamically added here -->
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <div class="image-box">
-                            <figure class="image image-hov-two"><img src="assets/image/how-it-works.png" style="width: 318px;height: auto;margin-left: 200px;" alt=""></figure>
+                        <div class="card-footer d-flex justify-content-center">
+                            <nav>
+                                <ul class="pagination">
+                                    <!-- Pagination buttons will be dynamically added here -->
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- process-section -->
+<section class="process-section pt_100 pb_70">
+    <div class="auto-container">
+        <div class="sec-title centred pb_60">
+            <span class="sub-title mb_14">The Process</span>
+            <h2>How It Works</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content-box">
+                    <div class="process-block-one">
+                        <div class="inner-box">
+                            <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                            <span class="count-text">1</span>
+                            <h3>Sign up, It's Free!</h3>
+                            <p>Our team will set up your account and help you build job to easy-to-use web dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="process-block-one">
+                        <div class="inner-box">
+                            <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                            <span class="count-text">2</span>
+                            <h3>Find best Deals and Invest</h3>
+                            <p>Create and Trade anywhere from 1-100% openings with just a few clicks. customize your own.</p>
+                        </div>
+                    </div>
+                    <div class="process-block-one">
+                        <div class="inner-box">
+                            <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                            <span class="count-text">3</span>
+                            <h3>Get you profit back</h3>
+                            <p>View market, reviews, and rosters before forex arrive on the site, and post reviews and pay, effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="image-box">
+                    <figure class="image image-hov-two"><img src="assets/image/how-it-works.png" style="width: 318px;height: auto;margin-left: 200px;" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- process-section end -->
 
 
@@ -681,129 +708,160 @@ table.table.table-striped {
 <!-- subscribe-section end -->
 @push('scripts')
 <script>
-  $(document).ready(function () {
+    $(document).ready(function() {
     const allowedSymbols = [
-      "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD",
-      "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNOK", "EURNZD", "EURSEK", "EURUSD", "GBPAUD",
-      "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD",
-      "USDCAD", "USDCHF", "USDCNH", "USDHKD", "USDJPY", "USDMXN", "USDNOK", "USDSEK", "USDZAR",
+        "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD",
+        "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNOK", "EURNZD", "EURSEK", "EURUSD", "GBPAUD",
+        "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD",
+        "USDCAD", "USDCHF", "USDCNH", "USDHKD", "USDJPY", "USDMXN", "USDNOK", "USDSEK", "USDZAR",
     ];
 
-    // Handle tab switching
-    $(".p-tab-btn").on("click", function () {
-      const targetTab = $(this).data("tab");
-      $(".p-tab").removeClass("active-tab");
-      $(`#${targetTab}`).addClass("active-tab");
+    const itemsPerPage = 5;
+    let tradingData = [];
+    let currentPage = 1;
 
-      // Reinitialize Owl Carousel for the active tab
-      $(`#${targetTab} .five-item-carousel`).owlCarousel({
-        loop:true,
-			margin:30,
-			nav:true,
-			smartSpeed: 500,
-			autoplay: 1000,
-			navText: [ '<span class="icon-21"></span>', '<span class="icon-22"></span>' ],
-			responsive:{
-				0:{
-					items:1
-				},
-				480:{
-					items:2
-				},
-				600:{
-					items:3
-				},
-				800:{
-					items:4
-				},			
-				1200:{
-					items:4
-				}
+    // Function to create the graph as an image based on percentChange
+    function createImageGraph(symbol, percentChange) {
+        const imageContainer = $(`#graph-${symbol}`);
+        const isUp = percentChange > 0;
+        const imageUrl = isUp ?
+            "https://www.markets.com/chartpngv2/eurcad-up.png" :  // Green graph for uptrend
+            "https://www.markets.com/chartpngv2/eurcad-down.png"; // Red graph for downtrend
+        const altText = isUp ? "Upward Trend" : "Downward Trend";
 
-			}
-      });
-    });
+        // Set the image source and visibility based on percentChange
+        imageContainer.html(`
+            <img class="change-graph" onerror="this.style.opacity='0'" 
+                 data-src-up="https://www.markets.com/chartpngv2/eurcad-up.png" 
+                 data-src-down="https://www.markets.com/chartpngv2/eurcad-down.png"
+                 data-src="${imageUrl}" src="${imageUrl}" loading="lazy" height="25" alt="${altText}">
+        `);
+    }
 
-    
+    // Update the renderTable function to format the instrument like EUR/CHF
+    const renderTable = () => {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const visibleData = tradingData.slice(startIndex, endIndex);
 
-    // WebSocket Integration
-    const server = {
-      connect: function () {
-        const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
-        this._ws = new WebSocket(location);
-        this._ws.onopen = this._onopen;
-        this._ws.onmessage = this._onmessage.bind(this);
-        this._ws.onclose = this._onclose.bind(this);
-      },
-      _onopen: function () {
-        console.log("WebSocket connection established.");
-      },
-      _onmessage: function (event) {
-        try {
-          const content = JSON.parse(event.data);
-          if (content.type === "PricesAndOrderBook") {
-            this.updateTradingBlock(content);
-          }
-        } catch (error) {
-          console.error("Error processing WebSocket message:", error);
-        }
-      },
-      _onclose: function () {
-        console.log("WebSocket connection closed. Reconnecting...");
-        setTimeout(() => this.connect(), 1000);
-      },
-      updateTradingBlock: function (content) {
-        const { symbol, decimalPlaces, bidPrice, askPrice } = content;
-        if (!allowedSymbols.includes(symbol)) return;
+        const tableBody = $(".trading-table-body");
+        tableBody.empty();
 
-        const spread = askPrice - bidPrice;
-        const formattedAsk = (askPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
-        const formattedBid = (bidPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
-        const formattedSpread = (spread / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+        visibleData.forEach(({
+            symbol,
+            ask,
+            bid,
+            spread,
+            percentChange
+        }) => {
+            // Format symbol like EUR/CHF
+            const formattedSymbol = symbol.slice(0, 3) + "/" + symbol.slice(3);
 
-        let blockFound = false;
-        $(".trading-block-two").each(function () {
-          const blockSymbol = $(this).find("h5").text().trim();
-          if (blockSymbol === symbol) {
-            blockFound = true;
-            $(this).find(".text-list li:nth-child(1) span").text(formattedAsk);
-            $(this).find(".text-list li:nth-child(2) span").text(formattedBid);
-            $(this).find(".text-list li:nth-child(3) span").text(formattedSpread);
-          }
+            const newRow = `
+                <tr>
+                    <td>${formattedSymbol}</td>  <!-- Display formatted symbol -->
+                    <td class="text-center">${ask}</td>
+                    <td class="text-center">${bid}</td>
+                    <td class="text-center">${spread}</td>
+                    <td class="text-center">${percentChange}%</td>
+                    <td class="text-center" style="width: 80px; height: 25px;" id="graph-${symbol}">
+                        <!-- Placeholder for image graph -->
+                    </td>
+                </tr>`;
+            tableBody.append(newRow);
+
+            // Create the image graph based on percentChange
+            createImageGraph(symbol, parseFloat(percentChange));
         });
 
-        if (!blockFound) {
-          const carousel = $("#tab-1 .five-item-carousel");
-          if (carousel.find(".trading-block-two").length < 36) {
-            const newBlock = `
-              <div class="owl-item">
-                <div class="trading-block-two">
-                  <div class="inner-box">
-                    <h5>${symbol}</h5>
-                    <ul class="flag">
-                      <li><img src="{{ asset('') }}assets/images/icons/flag-1.png" alt=""></li>
-                      <li><img src="{{ asset('') }}assets/images/icons/flag-2.png" alt=""></li>
-                    </ul>
-                    <ul class="text-list clearfix">
-                      <li><h6>Ask</h6><span>${formattedAsk}</span></li>
-                      <li><h6>Bid</h6><span>${formattedBid}</span></li>
-                      <li><h6>Spread</h6><span>${formattedSpread}</span></li>
-                    </ul>
-                    <div class="btn-box"><a href="{{ asset('') }}account-details.html">Trade</a></div>
-                  </div>
-                </div>
-              </div>`;
-            carousel.trigger("add.owl.carousel", [$(newBlock)]).trigger("refresh.owl.carousel");
-          }
+        renderPagination();
+    };
+
+    const renderPagination = () => {
+        const totalPages = Math.ceil(tradingData.length / itemsPerPage);
+        const paginationContainer = $(".pagination");
+        paginationContainer.empty();
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = `<li class="page-item ${i === currentPage ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}">${i}</a></li>`;
+            paginationContainer.append(pageButton);
         }
-      },
+    };
+
+    $(document).on("click", ".page-link", function(e) {
+        e.preventDefault();
+        currentPage = parseInt($(this).data("page"), 10);
+        renderTable();
+    });
+
+    const server = {
+        connect: function() {
+            const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
+            this._ws = new WebSocket(location);
+            this._ws.onopen = this._onopen;
+            this._ws.onmessage = this._onmessage.bind(this);
+            this._ws.onclose = this._onclose.bind(this);
+        },
+        _onopen: function() {
+            console.log("WebSocket connection established.");
+        },
+        _onmessage: function(event) {
+            try {
+                const content = JSON.parse(event.data);
+                if (content.type === "PricesAndOrderBook") {
+                    this.updateTradingData(content);
+                }
+            } catch (error) {
+                console.error("Error processing WebSocket message:", error);
+            }
+        },
+        _onclose: function() {
+            console.log("WebSocket connection closed. Reconnecting...");
+            setTimeout(() => this.connect(), 1000);
+        },
+        updateTradingData: function(content) {
+            const {
+                symbol,
+                decimalPlaces,
+                bidPrice,
+                askPrice
+            } = content;
+            if (!allowedSymbols.includes(symbol)) return;
+
+            const spread = askPrice - bidPrice;
+            const percentChange = ((askPrice - bidPrice) / bidPrice) * 100; // Calculate percentage change
+            const formattedAsk = (askPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+            const formattedBid = (bidPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+            const formattedSpread = (spread / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+            const formattedPercentChange = percentChange.toFixed(2); // Formatting the percentage
+
+            const existingIndex = tradingData.findIndex((item) => item.symbol === symbol);
+            if (existingIndex !== -1) {
+                tradingData[existingIndex] = {
+                    symbol,
+                    ask: formattedAsk,
+                    bid: formattedBid,
+                    spread: formattedSpread,
+                    percentChange: formattedPercentChange
+                };
+            } else {
+                tradingData.push({
+                    symbol,
+                    ask: formattedAsk,
+                    bid: formattedBid,
+                    spread: formattedSpread,
+                    percentChange: formattedPercentChange
+                });
+            }
+
+            renderTable();
+        },
     };
 
     server.connect();
-  });
+});
+
 </script>
-
-
 @endpush
 
 @endsection

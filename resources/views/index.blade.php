@@ -709,159 +709,155 @@
 @push('scripts')
 <script>
     $(document).ready(function() {
-    const allowedSymbols = [
-        "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD",
-        "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNOK", "EURNZD", "EURSEK", "EURUSD", "GBPAUD",
-        "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD",
-        "USDCAD", "USDCHF", "USDCNH", "USDHKD", "USDJPY", "USDMXN", "USDNOK", "USDSEK", "USDZAR",
-    ];
+        const allowedSymbols = [
+            "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD",
+            "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNOK", "EURNZD", "EURSEK", "EURUSD", "GBPAUD",
+            "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD",
+            "USDCAD", "USDCHF", "USDCNH", "USDHKD", "USDJPY", "USDMXN", "USDNOK", "USDSEK", "USDZAR",
+        ];
 
-    const itemsPerPage = 5;
-    let tradingData = [];
-    let currentPage = 1;
+        const itemsPerPage = 5;
+        let tradingData = [];
+        let currentPage = 1;
+        let previousPrices = {}; // To store the previous prices for comparison
 
-    // Function to create the graph as an image based on percentChange
-    function createImageGraph(symbol, percentChange) {
-        const imageContainer = $(`#graph-${symbol}`);
-        const isUp = percentChange > 0;
-        const imageUrl = isUp ?
-            "https://www.markets.com/chartpngv2/eurcad-up.png" :  // Green graph for uptrend
-            "https://www.markets.com/chartpngv2/eurcad-down.png"; // Red graph for downtrend
-        const altText = isUp ? "Upward Trend" : "Downward Trend";
+        // Function to create the graph as an image based on percentChange
+        function createImageGraph(symbol, percentChange) {
+            const imageContainer = $(`#graph-${symbol}`);
+            const isUp = percentChange > 0;
+            const imageUrl = isUp ?
+                "https://www.markets.com/chartpngv2/eurcad-up.png" :  // Green graph for uptrend
+                "https://www.markets.com/chartpngv2/eurcad-down.png"; // Red graph for downtrend
+            const altText = isUp ? "Upward Trend" : "Downward Trend";
 
-        // Set the image source and visibility based on percentChange
-        imageContainer.html(`
-            <img class="change-graph" onerror="this.style.opacity='0'" 
-                 data-src-up="https://www.markets.com/chartpngv2/eurcad-up.png" 
-                 data-src-down="https://www.markets.com/chartpngv2/eurcad-down.png"
-                 data-src="${imageUrl}" src="${imageUrl}" loading="lazy" height="25" alt="${altText}">
-        `);
-    }
+            // Set the image source and visibility based on percentChange
+            imageContainer.html(`
+                <img class="change-graph" onerror="this.style.opacity='0'" 
+                     src="${imageUrl}" loading="lazy" height="25" alt="${altText}">
+            `);
+        }
 
-    // Update the renderTable function to format the instrument like EUR/CHF
-    const renderTable = () => {
-        const startIndex = (currentPage - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        const visibleData = tradingData.slice(startIndex, endIndex);
+        const renderTable = () => {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const visibleData = tradingData.slice(startIndex, endIndex);
 
-        const tableBody = $(".trading-table-body");
-        tableBody.empty();
+            const tableBody = $(".trading-table-body");
+            tableBody.empty();
 
-        visibleData.forEach(({
-            symbol,
-            ask,
-            bid,
-            spread,
-            percentChange
-        }) => {
-            // Format symbol like EUR/CHF
-            const formattedSymbol = symbol.slice(0, 3) + "/" + symbol.slice(3);
+            visibleData.forEach(({ symbol, ask, bid, spread, percentChange }) => {
+                const formattedSymbol = symbol.slice(0, 3) + "/" + symbol.slice(3);
 
-            const newRow = `
-                <tr>
-                    <td>${formattedSymbol}</td>  <!-- Display formatted symbol -->
-                    <td class="text-center">${ask}</td>
-                    <td class="text-center">${bid}</td>
-                    <td class="text-center">${spread}</td>
-                    <td class="text-center">${percentChange}%</td>
-                    <td class="text-center" style="width: 80px; height: 25px;" id="graph-${symbol}">
-                        <!-- Placeholder for image graph -->
-                    </td>
-                </tr>`;
-            tableBody.append(newRow);
+                const newRow = `
+                    <tr>
+                        <td>${formattedSymbol}</td>
+                        <td class="text-center">${ask}</td>
+                        <td class="text-center">${bid}</td>
+                        <td class="text-center">${spread}</td>
+                        <td class="text-center">${percentChange}%</td>
+                        <td class="text-center" style="width: 80px; height: 25px;" id="graph-${symbol}">
+                            <!-- Placeholder for image graph -->
+                        </td>
+                    </tr>`;
+                tableBody.append(newRow);
 
-            // Create the image graph based on percentChange
-            createImageGraph(symbol, parseFloat(percentChange));
+                createImageGraph(symbol, parseFloat(percentChange));
+            });
+
+            renderPagination();
+        };
+
+        const renderPagination = () => {
+            const totalPages = Math.ceil(tradingData.length / itemsPerPage);
+            const paginationContainer = $(".pagination");
+            paginationContainer.empty();
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = `<li class="page-item ${i === currentPage ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}">${i}</a></li>`;
+                paginationContainer.append(pageButton);
+            }
+        };
+
+        $(document).on("click", ".page-link", function(e) {
+            e.preventDefault();
+            currentPage = parseInt($(this).data("page"), 10);
+            renderTable();
         });
 
-        renderPagination();
-    };
-
-    const renderPagination = () => {
-        const totalPages = Math.ceil(tradingData.length / itemsPerPage);
-        const paginationContainer = $(".pagination");
-        paginationContainer.empty();
-
-        for (let i = 1; i <= totalPages; i++) {
-            const pageButton = `<li class="page-item ${i === currentPage ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}">${i}</a></li>`;
-            paginationContainer.append(pageButton);
-        }
-    };
-
-    $(document).on("click", ".page-link", function(e) {
-        e.preventDefault();
-        currentPage = parseInt($(this).data("page"), 10);
-        renderTable();
-    });
-
-    const server = {
-        connect: function() {
-            const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
-            this._ws = new WebSocket(location);
-            this._ws.onopen = this._onopen;
-            this._ws.onmessage = this._onmessage.bind(this);
-            this._ws.onclose = this._onclose.bind(this);
-        },
-        _onopen: function() {
-            console.log("WebSocket connection established.");
-        },
-        _onmessage: function(event) {
-            try {
-                const content = JSON.parse(event.data);
-                if (content.type === "PricesAndOrderBook") {
-                    this.updateTradingData(content);
+        const server = {
+            connect: function() {
+                const location = "wss://quotes.fx-edge.com/wsquotes/servlet/WebSocket";
+                this._ws = new WebSocket(location);
+                this._ws.onopen = this._onopen;
+                this._ws.onmessage = this._onmessage.bind(this);
+                this._ws.onclose = this._onclose.bind(this);
+            },
+            _onopen: function() {
+                console.log("WebSocket connection established.");
+            },
+            _onmessage: function(event) {
+                try {
+                    const content = JSON.parse(event.data);
+                    if (content.type === "PricesAndOrderBook") {
+                        this.updateTradingData(content);
+                    }
+                } catch (error) {
+                    console.error("Error processing WebSocket message:", error);
                 }
-            } catch (error) {
-                console.error("Error processing WebSocket message:", error);
-            }
-        },
-        _onclose: function() {
-            console.log("WebSocket connection closed. Reconnecting...");
-            setTimeout(() => this.connect(), 1000);
-        },
-        updateTradingData: function(content) {
-            const {
-                symbol,
-                decimalPlaces,
-                bidPrice,
-                askPrice
-            } = content;
-            if (!allowedSymbols.includes(symbol)) return;
+            },
+            _onclose: function() {
+                console.log("WebSocket connection closed. Reconnecting...");
+                setTimeout(() => this.connect(), 1000);
+            },
+            updateTradingData: function(content) {
+                const { symbol, decimalPlaces, bidPrice, askPrice } = content;
+                if (!allowedSymbols.includes(symbol)) return;
 
-            const spread = askPrice - bidPrice;
-            const percentChange = ((askPrice - bidPrice) / bidPrice) * 100; // Calculate percentage change
-            const formattedAsk = (askPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
-            const formattedBid = (bidPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
-            const formattedSpread = (spread / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
-            const formattedPercentChange = percentChange.toFixed(2); // Formatting the percentage
+                const spread = askPrice - bidPrice;
+                const percentChange = ((askPrice - bidPrice) / bidPrice) * 100; // Calculate percentage change
+                const formattedAsk = (askPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+                const formattedBid = (bidPrice / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+                const formattedSpread = (spread / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+                const formattedPercentChange = percentChange.toFixed(2);
 
-            const existingIndex = tradingData.findIndex((item) => item.symbol === symbol);
-            if (existingIndex !== -1) {
-                tradingData[existingIndex] = {
-                    symbol,
-                    ask: formattedAsk,
-                    bid: formattedBid,
-                    spread: formattedSpread,
-                    percentChange: formattedPercentChange
-                };
-            } else {
-                tradingData.push({
-                    symbol,
-                    ask: formattedAsk,
-                    bid: formattedBid,
-                    spread: formattedSpread,
-                    percentChange: formattedPercentChange
-                });
-            }
+                // Determine the arrow direction for ask and bid prices
+                const prevAsk = previousPrices[symbol]?.ask || askPrice;
+                const prevBid = previousPrices[symbol]?.bid || bidPrice;
+                const askArrow = askPrice > prevAsk ? `<span style="color:green;">↑</span>` :
+                                 askPrice < prevAsk ? `<span style="color:red;">↓</span>` : "";
+                const bidArrow = bidPrice > prevBid ? `<span style="color:green;">↑</span>` :
+                                 bidPrice < prevBid ? `<span style="color:red;">↓</span>` : "";
 
-            renderTable();
-        },
-    };
+                // Update previous prices
+                previousPrices[symbol] = { ask: askPrice, bid: bidPrice };
 
-    server.connect();
-});
+                const existingIndex = tradingData.findIndex((item) => item.symbol === symbol);
+                if (existingIndex !== -1) {
+                    tradingData[existingIndex] = {
+                        symbol,
+                        ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
+                        bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
+                        spread: formattedSpread,
+                        percentChange: formattedPercentChange
+                    };
+                } else {
+                    tradingData.push({
+                        symbol,
+                        ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
+                        bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
+                        spread: formattedSpread,
+                        percentChange: formattedPercentChange
+                    });
+                }
 
+                renderTable();
+            },
+        };
+
+        server.connect();
+    });
 </script>
+
 @endpush
 
 @endsection
