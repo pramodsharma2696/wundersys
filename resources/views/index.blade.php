@@ -87,10 +87,25 @@
     .trading-block-two .inner-box {
         width: 150% !important;
     }
-
+    .banner-carousel .owl-dots button.active {
+            opacity: 0;
+        }
     @media (max-width: 768px) {
         .trading-block-two .inner-box {
             width: 236% !important;
+        }
+        .banner-section .btn-one{
+            padding: 6px 30px;
+        }
+        .content-box1 {
+        margin-top: 49%;
+        margin-bottom: -65px;
+        }
+        .banner-carousel .slide-item {
+            padding: 30px 30px;
+        }
+        .banner-carousel .owl-dots button.active {
+            opacity: 0;
         }
     }
 

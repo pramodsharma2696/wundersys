@@ -1,6 +1,13 @@
 @extends('master')
 @section('contents')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    .select2-container .select2-selection--single {
+        height: 35px !important;
+    }
+</style>
         <!-- page-title -->
         <section class="page-title centred pt_90 pb_0">
             <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-34.png);"></div>
@@ -162,8 +169,19 @@
                 </div>
             </div>
         </section>
+@push('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
 <script>
+    $(document).ready(function() {
+        $("#profitInstrument").select2({
+            allowClear: true,
+            width: "100%"
+        })
+    });
+
     document.getElementById("profit-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -197,5 +215,5 @@
         document.getElementById("profit-result").value = `$${profit.toFixed(2)}`;
     });
 </script>
-
+@endpush
 @endsection

@@ -55,6 +55,9 @@
     margin-left: 75px;
     /* height: 47px; */
 }
+.account-block-one .inner-box {
+    /* height: 200px; */
+}
 </style>
 </head>
 
