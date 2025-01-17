@@ -61,6 +61,16 @@ Route::get('/us-stocks', function () {
 Route::get('/all-accounts', function () {
     return view('account.all-accounts');
 });
+Route::get('/ecn-account', function () {
+    return view('account.ecn-account');
+});
+Route::get('/elite-account', function () {
+    return view('account.elite-account');
+});
+Route::get('/vip-account', function () {
+    return view('account.vip-account');
+});
+
 Route::get('/standard-account', function () {
     return view('account.standard-account');
 });

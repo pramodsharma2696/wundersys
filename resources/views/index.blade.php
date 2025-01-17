@@ -486,7 +486,7 @@
                                 </div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <p>Wundersys Capital Limited offers access to cutting-edge trading platforms, including industry favorites like MetaTrader 4 and MetaTrader 5. Our commitment to low-latency connectivity ensures lightning-fast execution of your trades. Coupled with superior liquidity, you can experience seamless trading with minimal slippage.</p>
+                                        <p>Wundersys Capital Limited offers access to cutting-edge trading platforms, including industry favorites like MetaTrader 5. Our commitment to low-latency connectivity ensures lightning-fast execution of your trades. Coupled with superior liquidity, you can experience seamless trading with minimal slippage.</p>
                                     </div>
                                 </div>
                             </li>
