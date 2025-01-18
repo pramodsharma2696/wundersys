@@ -208,7 +208,7 @@
             <span class="sub-title mb_14">Accounts</span>
             <h2>Wundersys Capital Limited Trading Accounts</h2>
         </div>
-        <div class="table-responsive">
+        <div class="table-responsive wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
         <table class="table table-bordered table-stripped">
             <thead>
                 <tr class="text-center" style="background: #3caed5;">
@@ -263,9 +263,9 @@
                 </tr>
                 <tr>
                     <td><strong>Swap</strong></td>
-                    <td class="text-center">Free</td>
-                    <td class="text-center">Free</td>
-                    <td class="text-center">Free</td>
+                    <td class="text-center">Applied</td>
+                    <td class="text-center">Applied</td>
+                    <td class="text-center">Applied</td>
                     <td class="text-center">Free</td>
                 </tr>
                 <tr>

@@ -8,6 +8,11 @@
     margin-top: -20px;
     width: 310px;
 }
+@media (max-width: 768px) {
+        .hideme{
+            display: none;
+        }
+    }
 </style>
         <!-- page-title -->
         <section class="page-title centred pt_90 pb_0">
@@ -34,235 +39,97 @@
             <span class="sub-title mb_14">VIP Accounts</span>
             
         </div>
-        <div class="row clearfix">
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">Standard Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No commission</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call & Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
+        <div class="table-responsive wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <table class="table table-bordered table-stripped">
+                <thead>
+                    <tr class="text-center" style="background: #3caed5;">
+                        <th></th>
+                        <th>
+                            <h6 class="mb-3">Account</h6>
+                            <h5>Standard</h5>
+                        </th>
+                        <th>
+                            <h6 class="mb-3">Account</h6>
+                            <h5>ECN</h5>
+                        </th>
+                        <th>
+                            <h6 class="mb-3">Account</h6>
+                            <h5>VIP</h5>
+                        </th>
+                        <th>
+                            <h6 class="mb-3">Account</h6>
+                            <h5>Elite</h5>
+                        </th>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                        <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">ECN Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $500</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>1 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No commission</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call & Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Initial Deposit</strong></td>
+                        <td class="text-center">Min $100</td>
+                        <td class="text-center">Min $500</td>
+                        <td class="text-center">Min $5000</td>
+                        <td class="text-center">Min $25000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Leverage</strong></td>
+                        <td class="text-center">to 1:100</td>
+                        <td class="text-center">to 1:100</td>
+                        <td class="text-center">to 1:100</td>
+                        <td class="text-center">to 1:100</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lot Size</strong></td>
+                        <td class="text-center">0.01 Lot</td>
+                        <td class="text-center">0.01 Lot</td>
+                        <td class="text-center">0.01 Lot</td>
+                        <td class="text-center">0.01 Lot</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spread</strong></td>
+                        <td class="text-center">2 pips</td>
+                        <td class="text-center">1 pips</td>
+                        <td class="text-center">0.2 pips</td>
+                        <td class="text-center">0.2 pips</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Swap</strong></td>
+                        <td class="text-center">Applied</td>
+                        <td class="text-center">Applied</td>
+                        <td class="text-center">Applied</td>
+                        <td class="text-center">Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scalping & Hedging</strong></td>
+                        <td class="text-center">Permitted</td>
+                        <td class="text-center">Permitted</td>
+                        <td class="text-center">Permitted</td>
+                        <td class="text-center">Permitted</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Commission</strong></td>
+                        <td class="text-center">No commission</td>
+                        <td class="text-center">No commission</td>
+                        <td class="text-center">$7 per lot</td>
+                        <td class="text-center">No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Margin Call, Stop out</strong></td>
+                        <td class="text-center">100% & 30%</td>
+                        <td class="text-center">100% & 30%</td>
+                        <td class="text-center">100% & 30%</td>
+                        <td class="text-center">100% & 30%</td>
+                    </tr>
+                    <tr class="text-center hideme">
+                        <td><strong></strong></td>
+                        <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                        <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                        <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                        <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                    </tr>
+                </tbody>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                        <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">VIP Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $5000</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>0.2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>7$ per lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call & Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
-
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">ELITE Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $25000</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>0.2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call & Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
-
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+            </table>
         </div>
     </div>
 </section>

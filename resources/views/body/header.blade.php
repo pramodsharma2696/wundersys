@@ -76,6 +76,18 @@
                                         
                                     </ul>
                                 </li>
+                                <li class="dropdown"><a href="#">Plateform</a>
+                                    <ul>
+                                        <li class="dropdown"><a href="#">MT5</a>
+                                            <ul>
+                                                <li><a href="{{ url('mt5-desktop') }}">Desktop</a></li>
+                                                <li><a href="{{ url('mt5-android') }}">Android</a></li>
+                                                <li><a href="{{ url('mt5-ios') }}">iOS</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                                 
                                 <li class="dropdown"><a href="#">Knowledge portal</a>
                                     <ul>

@@ -56,6 +56,17 @@ Route::get('/us-stocks', function () {
     return view('trading.us-stocks');
 });
 
+// Plateform
+Route::get('/mt5-desktop', function () {
+    return view('plateform.mt5-desktop');
+});
+Route::get('/mt5-android', function () {
+    return view('plateform.mt5-android');
+});
+Route::get('/mt5-ios', function () {
+    return view('plateform.mt5-ios');
+});
+
 // Accounts
 
 Route::get('/all-accounts', function () {
