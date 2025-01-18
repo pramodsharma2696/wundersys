@@ -1,6 +1,17 @@
 @extends('master')
 @section('contents')
-
+<style>
+    .desktop-img{
+        width:640px !important;
+        max-width: none;
+    }
+    @media (max-width: 768px) {
+            .desktop-img{
+            width:350px !important;
+            max-width: none;
+        }
+    }
+</style>
 <!-- Page Title -->
 <section class="page-title centred pt_90 pb_0">
     <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-34.png);"></div>
@@ -38,7 +49,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
                 <figure class="image-box">
-                    <img src="{{ asset('')}}assets/mt5/desktop.png" alt="MT5 Desktop" style="width:640px !important;max-width: none;">
+                    <img src="{{ asset('')}}assets/mt5/desktop.png" class="desktop-img" alt="MT5 Desktop">
                 </figure>
             </div>
         </div>
@@ -95,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one" style="width:200px;margin-left: 41%;margin-right: 50%;">Open an Account</a>
+                    <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one common-btn">Open an Account</a>
                     
                 </div>
             </div>

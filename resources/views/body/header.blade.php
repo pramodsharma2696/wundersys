@@ -76,7 +76,7 @@
                                         
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="#">Plateform</a>
+                                <li class="dropdown"><a href="#">Platform</a>
                                     <ul>
                                         <li class="dropdown"><a href="#">MT5</a>
                                             <ul>

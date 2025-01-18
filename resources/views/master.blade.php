@@ -55,9 +55,16 @@
     margin-left: 75px;
     /* height: 47px; */
 }
-.account-block-one .inner-box {
-    /* height: 200px; */
+.common-btn{
+    width:200px;
+    margin-left: 41%;
+    margin-right: 50%;
 }
+@media (max-width: 768px) {
+    .common-btn{
+            margin-left: 23%;
+        }
+    }
 </style>
 </head>
 
