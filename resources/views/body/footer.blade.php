@@ -103,7 +103,7 @@
 <floatul style="margin-left: 55px; margin-bottom: 150px;">
     <li>
         <a href="https://api.whatsapp.com/send/?phone=443308087484&text&type=phone_number&app_absent=0">
-            <img src="assets/images/icons/whatsapp_icon.webp"></a>
+            <!-- <img src="assets/images/icons/whatsapp_icon.webp"></a> -->
     </li>
 </floatul>
 <div id="testdiv">
