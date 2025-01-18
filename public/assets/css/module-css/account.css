@@ -32,6 +32,7 @@
   padding: 30px 30px 30px 30px;
   margin-bottom: 30px;
   transition: all 500ms ease;
+  height: 200px;
 }
 
 .account-block-one .inner-box:hover{
