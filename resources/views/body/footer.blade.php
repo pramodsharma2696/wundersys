@@ -86,7 +86,7 @@
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="bottom-inner">
-                <p>Copyright &copy; 2024 <a href="{{ url('/') }}">Wundersys Capital Limited</a>. All rights reserved.</p>
+                <p>Copyright &copy; 2025 <a href="{{ url('/') }}">Wundersys Capital Limited</a>. All rights reserved.</p>
                 <!-- <ul class="social-links">
                     <li>
                         <h5>Follow Us On:</h5>

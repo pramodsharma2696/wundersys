@@ -87,25 +87,34 @@
     .trading-block-two .inner-box {
         width: 150% !important;
     }
+
     .banner-carousel .owl-dots button.active {
-            opacity: 0;
-        }
+        opacity: 0;
+    }
+
     @media (max-width: 768px) {
         .trading-block-two .inner-box {
             width: 236% !important;
         }
-        .banner-section .btn-one{
+
+        .banner-section .btn-one {
             padding: 6px 30px;
         }
+
         .content-box1 {
-        margin-top: 49%;
-        margin-bottom: -65px;
+            margin-top: 49%;
+            margin-bottom: -65px;
         }
+
         .banner-carousel .slide-item {
             padding: 30px 30px;
         }
+
         .banner-carousel .owl-dots button.active {
             opacity: 0;
+        }
+        .hideme{
+            display: none;
         }
     }
 
@@ -116,8 +125,6 @@
     .page-link {
         padding: 0px 12px;
     }
-
-   
 </style>
 
 <!-- banner-section -->
@@ -157,6 +164,18 @@
             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
                 {
                     "symbols": [{
+                            "proName": "BITSTAMP:LTCUSD",
+                            "title": "Litecoin"
+                        },
+                        {
+                            "proName": "OANDA:XAUUSD",
+                            "title": "Gold Spot"
+                        },
+                        {
+                            "proName": "FX_IDC:AUDUSD",
+                            "title": "AUD to USD"
+                        },
+                        {
                             "proName": "FX_IDC:GBPUSD",
                             "title": "GBP to USD"
                         },
@@ -164,18 +183,9 @@
                             "proName": "FX_IDC:USDJPY",
                             "title": "USD to JPY"
                         },
-                        {
-                            "proName": "FX_IDC:AUDUSD",
-                            "title": "AUD to USD"
-                        },
-                        {
-                            "proName": "OANDA:XAUUSD",
-                            "title": "Gold Spot"
-                        },
-                        {
-                            "proName": "BITSTAMP:LTCUSD",
-                            "title": "Litecoin"
-                        }
+
+
+
                     ],
                     "showSymbolLogo": true,
                     "isTransparent": false,
@@ -198,235 +208,97 @@
             <span class="sub-title mb_14">Accounts</span>
             <h2>Wundersys Capital Limited Trading Accounts</h2>
         </div>
-        <div class="row clearfix">
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a1.png" alt="Standard Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">Standard Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No commission</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call,Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
+        <div class="table-responsive">
+        <table class="table table-bordered table-stripped">
+            <thead>
+                <tr class="text-center" style="background: #3caed5;">
+                    <th></th>
+                    <th>
+                        <h6 class="mb-3">Account</h6>
+                        <h5>Standard</h5>
+                    </th>
+                    <th>
+                        <h6 class="mb-3">Account</h6>
+                        <h5>ECN</h5>
+                    </th>
+                    <th>
+                        <h6 class="mb-3">Account</h6>
+                        <h5>VIP</h5>
+                    </th>
+                    <th>
+                        <h6 class="mb-3">Account</h6>
+                        <h5>Elite</h5>
+                    </th>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="ECN Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">ECN Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $500</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>1 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No commission</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call,Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Initial Deposit</strong></td>
+                    <td class="text-center">Min $100</td>
+                    <td class="text-center">Min $500</td>
+                    <td class="text-center">Min $5000</td>
+                    <td class="text-center">Min $25000</td>
+                </tr>
+                <tr>
+                    <td><strong>Leverage</strong></td>
+                    <td class="text-center">to 1:100</td>
+                    <td class="text-center">to 1:100</td>
+                    <td class="text-center">to 1:100</td>
+                    <td class="text-center">to 1:100</td>
+                </tr>
+                <tr>
+                    <td><strong>Lot Size</strong></td>
+                    <td class="text-center">0.01 Lot</td>
+                    <td class="text-center">0.01 Lot</td>
+                    <td class="text-center">0.01 Lot</td>
+                    <td class="text-center">0.01 Lot</td>
+                </tr>
+                <tr>
+                    <td><strong>Spread</strong></td>
+                    <td class="text-center">2 pips</td>
+                    <td class="text-center">1 pips</td>
+                    <td class="text-center">0.2 pips</td>
+                    <td class="text-center">0.2 pips</td>
+                </tr>
+                <tr>
+                    <td><strong>Swap</strong></td>
+                    <td class="text-center">Free</td>
+                    <td class="text-center">Free</td>
+                    <td class="text-center">Free</td>
+                    <td class="text-center">Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Scalping & Hedging</strong></td>
+                    <td class="text-center">Permitted</td>
+                    <td class="text-center">Permitted</td>
+                    <td class="text-center">Permitted</td>
+                    <td class="text-center">Permitted</td>
+                </tr>
+                <tr>
+                    <td><strong>Commission</strong></td>
+                    <td class="text-center">No commission</td>
+                    <td class="text-center">No commission</td>
+                    <td class="text-center">$7 per lot</td>
+                    <td class="text-center">No</td>
+                </tr>
+                <tr>
+                    <td><strong>Margin Call, Stop out</strong></td>
+                    <td class="text-center">100% & 30%</td>
+                    <td class="text-center">100% & 30%</td>
+                    <td class="text-center">100% & 30%</td>
+                    <td class="text-center">100% & 30%</td>
+                </tr>
+                <tr class="text-center hideme">
+                    <td><strong></strong></td>
+                    <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                    <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                    <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                    <td><a href="#" class="theme-btn btn-sm btn-one">Open An Account <i class="bi bi-arrow-right"></i></a></td>
+                </tr>
+            </tbody>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">VIP Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $5000</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>0.2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>7$ per lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call,Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
-
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 account-block">
-                <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <!-- <div class="icon-box" style="background: none;"><img src="{{ asset('')}}assets/image/a2.png" alt="VIP Account"></div> -->
-                        <h3><a href="{{ url('/standard-account') }}">ELITE Account</a></h3><br>
-                        <div class="content-box">
-                            <ul class="list-item clearfix">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <th>Initial Deposit</th>
-                                            <td>Min $25000</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Leverage</th>
-                                            <td>to 1:100</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lot Size</th>
-                                            <td>0.01 Lot</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Spread</th>
-                                            <td>0.2 pips</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Swap</th>
-                                            <td>Free</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Scalping & Hedging</th>
-                                            <td>Permitted</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Commission</th>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Margin Call,Stop out</th>
-                                            <td>100% & 30%</td>
-                                        </tr>
-
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2" class="text-center">
-                                                <a href="#" class="theme-btn btn-one mr_10">Open An Account <i class="bi bi-arrow-right"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                </table>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+        </table>
         </div>
     </div>
 </section>
@@ -747,7 +619,7 @@
             const imageContainer = $(`#graph-${symbol}`);
             const isUp = percentChange > 0;
             const imageUrl = isUp ?
-                "https://www.markets.com/chartpngv2/eurcad-up.png" :  // Green graph for uptrend
+                "https://www.markets.com/chartpngv2/eurcad-up.png" : // Green graph for uptrend
                 "https://www.markets.com/chartpngv2/eurcad-down.png"; // Red graph for downtrend
             const altText = isUp ? "Upward Trend" : "Downward Trend";
 
@@ -766,7 +638,13 @@
             const tableBody = $(".trading-table-body");
             tableBody.empty();
 
-            visibleData.forEach(({ symbol, ask, bid, spread, percentChange }) => {
+            visibleData.forEach(({
+                symbol,
+                ask,
+                bid,
+                spread,
+                percentChange
+            }) => {
                 const formattedSymbol = symbol.slice(0, 3) + "/" + symbol.slice(3);
 
                 const newRow = `
@@ -831,7 +709,12 @@
                 setTimeout(() => this.connect(), 1000);
             },
             updateTradingData: function(content) {
-                const { symbol, decimalPlaces, bidPrice, askPrice } = content;
+                const {
+                    symbol,
+                    decimalPlaces,
+                    bidPrice,
+                    askPrice
+                } = content;
                 if (!allowedSymbols.includes(symbol)) return;
 
                 const spread = askPrice - bidPrice;
@@ -845,12 +728,15 @@
                 const prevAsk = previousPrices[symbol]?.ask || askPrice;
                 const prevBid = previousPrices[symbol]?.bid || bidPrice;
                 const askArrow = askPrice > prevAsk ? `<span style="color:green;">↑</span>` :
-                                 askPrice < prevAsk ? `<span style="color:red;">↓</span>` : "";
+                    askPrice < prevAsk ? `<span style="color:red;">↓</span>` : "";
                 const bidArrow = bidPrice > prevBid ? `<span style="color:green;">↑</span>` :
-                                 bidPrice < prevBid ? `<span style="color:red;">↓</span>` : "";
+                    bidPrice < prevBid ? `<span style="color:red;">↓</span>` : "";
 
                 // Update previous prices
-                previousPrices[symbol] = { ask: askPrice, bid: bidPrice };
+                previousPrices[symbol] = {
+                    ask: askPrice,
+                    bid: bidPrice
+                };
 
                 const existingIndex = tradingData.findIndex((item) => item.symbol === symbol);
                 if (existingIndex !== -1) {
