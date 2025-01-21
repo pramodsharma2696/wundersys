@@ -203,7 +203,7 @@
 <!-- account-section -->
 <section class="account-section pt_100 pb_100">
     <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-    <div class="auto-container" style="max-width: 1774px !important;">
+    <div class="auto-container" style="max-width:1500px !important;">
         <div class="sec-title pb_60 centred">
             <span class="sub-title mb_14">Accounts</span>
             <h2>Wundersys Capital Limited Trading Accounts</h2>
@@ -256,10 +256,10 @@
                 </tr>
                 <tr>
                     <td><strong>Spread</strong></td>
-                    <td class="text-center">2 pips</td>
+                    <td class="text-center">1.5 pips</td>
                     <td class="text-center">1 pips</td>
                     <td class="text-center">0.2 pips</td>
-                    <td class="text-center">0.2 pips</td>
+                    <td class="text-center">0.8 pips</td>
                 </tr>
                 <tr>
                     <td><strong>Swap</strong></td>
@@ -307,7 +307,7 @@
 
 <!-- about-section -->
 
-<section class="about-section pt_100 pb_100">
+<section class="about-section pt_100 pb_100" style="display: none;">
     <div class="auto-container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12 content-column">
