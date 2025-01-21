@@ -117,15 +117,15 @@
                                 </li>
                                 <li><a href="{{ url('contact-us') }}">Contact</a></li>
                                 <li><a href="{{ url('faq') }}">FAQ</a></li>
-                                <li class="hideme"><a href="#">Log In</a></li>
-                                <li class="hideme"><a href="#">Register</a></li>
+                                <li class="hideme"><a href="https://my.wundersyscapital.com/en/auth/sign-in">Log In</a></li>
+                                <li class="hideme"><a href="https://my.wundersyscapital.com/en/auth/sign-up">Register</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div class="menu-right-content">
-                    <div class="search-btn mr_25"><a href="#" class="theme-btn btn-one">Log In</a></div>
-                    <div class="btn-box"><a href="#" class="theme-btn btn-one">Register</a></div>
+                    <div class="search-btn mr_25"><a href="https://my.wundersyscapital.com/en/auth/sign-in" class="theme-btn btn-one">Log In</a></div>
+                    <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Register</a></div>
                 </div>
             </div>
         </div>
@@ -142,8 +142,8 @@
                     </nav>
                 </div>
                 <div class="menu-right-content">
-                <div class="search-btn mr_25"><a href="#" class="theme-btn btn-one">Login</a></div>
-                <div class="btn-box"><a href="#" class="theme-btn btn-one">Register</a></div>
+                <div class="search-btn mr_25"><a href="https://my.wundersyscapital.com/en/auth/sign-in" class="theme-btn btn-one">Login</a></div>
+                <div class="btn-box"><a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Register</a></div>
                 </div>
             </div>
         </div>

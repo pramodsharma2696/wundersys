@@ -140,8 +140,8 @@
                 </div>
                 <div class="content-box1 p_relative">
                     <div class="btn-box">
-                        <a href="/login" class="theme-btn btn-one">Login</a>
-                        <a href="/register" class="theme-btn btn-one">Register</a>
+                        <a href="https://my.wundersyscapital.com/en/auth/sign-in" class="theme-btn btn-one">Login</a>
+                        <a href="https://my.wundersyscapital.com/en/auth/sign-up" class="theme-btn btn-one">Register</a>
                     </div>
                 </div>
             </div>
@@ -454,9 +454,9 @@
         <div class="project-tab">
             <div class="p-tabs-content">
                 <div class="p-tab active-tab" id="tab-1">
-                    <div class="card">
+                    <div class="card" style="background: linear-gradient(240deg, #06060600, #63686885);">
                         <div class="card-body">
-                            <table class="table">
+                            <table class="table" style="color:#fff;height: 450px;vertical-align: middle;">
                                 <thead>
                                     <tr>
                                         <th>Instrument</th>
@@ -729,12 +729,18 @@
             // Determine the arrow direction for ask and bid prices
             const prevAsk = previousPrices[symbol]?.ask || askPrice;
             const prevBid = previousPrices[symbol]?.bid || bidPrice;
-            const askArrow = askPrice > prevAsk ? `<span style="color:green;">↑</span>` :
-                askPrice < prevAsk ? `<span style="color:red;">↓</span>` : "";
-            const bidArrow = bidPrice > prevBid ? `<span style="color:green;">↑</span>` :
-                bidPrice < prevBid ? `<span style="color:red;">↓</span>` : "";
+            // const askArrow = askPrice > prevAsk ? `<span style="color:green;">↑</span>` : askPrice < prevAsk ? `<span style="color:red;">↓</span>` : "";
+            // const bidArrow = bidPrice > prevBid ? `<span style="color:green;">↑</span>` : bidPrice < prevBid ? `<span style="color:red;">↓</span>` : "";
+
+            const askArrow = askPrice > prevAsk ? `<span style="color:green;font-size:25px;font-weight:600">↑</span><span style="color:green;">${formattedAsk}</span>`: askPrice < prevAsk ? `<span style="color:red;font-size:25px;font-weight:600">↓</span><span style="color:red;">${formattedAsk}</span>`: `<span>${formattedAsk}</span>`;                     // Neutral, no color
+
+            const bidArrow = bidPrice > prevBid? `<span style="color:green;font-size:25px;font-weight:600">↑</span><span style="color:green;">${formattedBid}</span>`: bidPrice < prevBid? `<span style="color:red;font-size:25px;font-weight:600">↓</span><span style="color:red;">${formattedBid}</span>`: `<span>${formattedBid}</span>`; 
 
             // Update previous prices
+            // previousPrices[symbol] = {
+            //     ask: askPrice,
+            //     bid: bidPrice
+            // };
             previousPrices[symbol] = {
                 ask: askPrice,
                 bid: bidPrice
@@ -747,16 +753,20 @@
             if (existingIndex !== -1) {
                 tradingData[existingIndex] = {
                     symbol,
-                    ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
-                    bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
+                    ask: askArrow, // Add styled arrow and value to ask
+                    bid: bidArrow, // Add styled arrow and value to bid
+                    // ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
+                    // bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
                     spread: formattedSpread,
                     percentChange: formattedPercentChange
                 };
             } else {
                 tradingData.push({
                     symbol,
-                    ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
-                    bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
+                    ask: askArrow, // Add styled arrow and value to ask
+                    bid: bidArrow, // Add styled arrow and value to bid
+                    // ask: `${formattedAsk} ${askArrow}`, // Add arrow to ask
+                    // bid: `${formattedBid} ${bidArrow}`, // Add arrow to bid
                     spread: formattedSpread,
                     percentChange: formattedPercentChange
                 });
